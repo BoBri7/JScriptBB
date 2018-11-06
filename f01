@@ -1,9 +1,0 @@
-
-// GitHUB Reshad94/MDB Javascript functions for Memento Database scripts
-function pf(n)     {return parseFloat(n);}
-function pi(n)     {return parseInt(n);}
-function ps(n)     {return n.toString();}
-function tp(n)     {return typeof n;}
-function tf(n, c)  {return n.toFixed(c);}
-
-
