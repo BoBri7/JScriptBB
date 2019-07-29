@@ -10,7 +10,8 @@ function tf(n, c)   {return n.toFixed(c);}
 function f(x,l)  {return (" ".repeat(l)+x).slice(-l)}
 function fn(x,d) {return x.toFixed(d)}
 function fp(n)   {if (n>=0) n="+"+n;  return n }
-function mf(e,f,ff) {return moment(e.field(f)).format(ff)}
+function emf(e,f,ff) {return moment(e.field(f)).format(ff)}
+function mf(f,ff)    {return moment(  field(f)).format(ff)}
 //
 function sys(x)  {s=system().os;
   return x==0?s:x==1?s.slice(8,9): "\n"+ 
