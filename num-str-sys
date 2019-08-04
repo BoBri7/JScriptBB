@@ -1,0 +1,22 @@
+function GHnums() { 
+  s =  "★ GHnum   ret.v. ★ "
+  s+="\n mn(x,y) = min "
+  s+="\n mx(x,y) = max "
+  s+="\n N(x)    = num /0 "
+
+  s+="\n fN(x,d) = # => th.delim # "
+  s+="\n n(s)      #. => #    "
+  s+="\n pf(x)   = parseFloat "
+  s+="\n pi(x)   = parseInt "
+  s+="\n ps(x)   = string  "
+  s+="\n S(x)    = str />< "
+  s+="\n S(x)    = "
+  s+="\n ch(n)   = char "
+  s+="\n S(x)    = "
+  s+="\n S(x)    = "
+  s+="\n typ(x)  = varType "
+
+  s+="\n f(n,d)  = toFixed   "
+
+  s+="\n sys(x) = sys.os /=help 0=#   1=OS  " 
+  log( s) }
