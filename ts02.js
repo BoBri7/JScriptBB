@@ -18,3 +18,4 @@ function sys(x)  {s=system().os;
   "   sys(0=OS, 1=os#, /=help" +"\n"+ 
   "   srt(FN$,/=dsc 1=asc" +"\n" }
 //
+function sign(x) { return x>0?1:x<0?-1:0 }
