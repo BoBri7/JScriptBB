@@ -9,7 +9,7 @@ function tf(n, c)   {return n.toFixed(c);}
 // upd pon., 29. jul. 2019 
 function f(x,l)  {return (" ".repeat(l)+x).slice(-l)}
 function fn(x,d) {return x.toFixed(d)}
-function fp(n)   {if (n>=0) n="+"+n;  return n }
+function fp(n)   { n==null? return "" : if (n>=0) n="+"+n;  return n }
 function emf(e,f,ff) {return moment(e.field(f)).format(ff)}
 function mf(f,ff)    {return moment(  field(f)).format(ff)}
 //
