@@ -11,7 +11,7 @@ function f(x,l)  {return (" ".repeat(l)+x).slice(-l)}
 function fn(x,d) {return x.toFixed(d)}
 //function fp(n)   { n==null? return "" : if (n>=0) n="+"+n;  return n }
 function fp(n) { if(n==null) n = ""
- if (n !="" && n>=0) n="+"+n
+ if (n != "" && n>=0) n="+★"+n
  return n }
 
 function emf(e,f,ff) {return moment(e.field(f)).format(ff)}
