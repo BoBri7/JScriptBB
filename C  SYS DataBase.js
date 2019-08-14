@@ -3,11 +3,11 @@ function db(ns) { return lib(ns)} // name.$ /null
 function dbe(ns) { return db(ns).entries() }
 // dbs DBSort ★★★
 function dbs(db,s,o) { if(s==null)s="S"; if(o==null)o=-1
-//  if ( system().os.slice(8,9)>7) {
-//   db.sort( {compare: function (a,b) { return a.field(s)>b.field(s) ? o: -o }} )
-      blabla               
+//  if ( system().os.slice(8,9)>7) {//   db.sort( {compare: function (a,b) { return a.field(s)>b.field(s) ? o: -o }} )
+  blablax 
 // }
 //  else { db.sort( function (a,b) { return a.field(s)>b.field(s) ? o:-o }} )}
+return db
 }
 /*
 function dbes(n.s,o) { if(s==null)s="S"; if(o==null)o=-1
