@@ -2,6 +2,19 @@
 function db(ns) { return lib(ns)} // name.$ /null
 function dbe(ns) { return db(ns).entries() }
 // dbs DBSort ★★★
+
+function dbs(db,o,s) { 
+  if(s==null)s="S"
+  if(o==null)o=-1 //10
+  if ( system().os.slice(8,9)>7) {
+    db.sort( {compare: function (a,b) {  
+      return (a.field(s)-b.field(s))<0 ?-o:o}}) }
+
+//  else { db.sort( function (a,b) {
+//    return a.field(s)>b.field(s) ? -o:o }} )}
+  return db
+} 
+/*
 function dbs(db,s,o) { if(s==null)s="S"; if(o==null)o=-1
 //  if ( system().os.slice(8,9)>7) {//   db.sort( {compare: function (a,b) { return a.field(s)>b.field(s) ? o: -o }} )
   blablax 
@@ -9,7 +22,8 @@ function dbs(db,s,o) { if(s==null)s="S"; if(o==null)o=-1
 //  else { db.sort( function (a,b) { return a.field(s)>b.field(s) ? o:-o }} )}
 return db
 }
-/*
+
+
 function dbes(n.s,o) { if(s==null)s="S"; if(o==null)o=-1
   db = lib(n).entries()
   db.sort( {compare: function (a,b) { return a.field(s)>b.field(s) ? o: -o }})
