@@ -9,7 +9,12 @@ function dbs(db,s,o) { if(s==null)s="S"; if(o==null)o=-1
   else { db.sort( function (a,b) {
      return a.field(s)>b.field(s) ? o:-o }} )}
 }
-
+function dbes(n.s,o) { if(s==null)s="S"; if(o==null)o=-1
+  db = lib().entries()
+  db.sort( {compare: function (a,b) { return a.field(s)>b.field(s) ? o: -o }})
+  return db 
+}
+  
 //★ polja
 function F(f)        {return field(f) }   
 function ef(f,E)     { if(E==null) E=e ;
