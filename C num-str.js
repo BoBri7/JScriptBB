@@ -21,3 +21,4 @@ function GHnums() {
   s+="\n sp(n) = spaces " //★★★★<<<<
   
   log( s) }
+function 
