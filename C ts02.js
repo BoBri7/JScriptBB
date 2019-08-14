@@ -1,10 +1,10 @@
 // pon., 29. okt. 2018 
 // Reshad94/MDB Javascript functions for Memento Database scripts
 function pf(n)     {return parseFloat(n);}
-function pi(n)      {return parseInt(n);}
+function pi(n)     {return parseInt(n,10);}
 function ps(n)     {return n.toString();}
-function tp(n)      {return typeof (n);} //?????  ★
-function tf(n, c)   {return n.toFixed(c);}
+function tp(n)     {return typeof (n);} //?????  ★
+function tf(n,d)   {return n.toFixed(d);}
 // _Sent from my "HUAWEI MediaPad M5 10.8""" using [FastHub](https://play.google.com/store/apps/details?id=com.fastaccess.github)_:heart_eyes:
 // upd pon., 29. jul. 2019 
 function f(x,l)  {return (" ".repeat(l)+x).slice(-l)}
@@ -16,7 +16,7 @@ function fp(n) { if(n==null) n = ""
 
 function emf(e,f,ff) {return moment(e.field(f)).format(ff)}
 function mf(f,ff)    {return moment(  field(f)).format(ff)}
-//
+// SYS return OS # or $
 function sys(x)  {s=system().os;
   return x==0?s:x==1?s.slice(8,9): "\n"+ 
   "   sys(0=OS, 1=os#, /=help" +"\n"+ 
