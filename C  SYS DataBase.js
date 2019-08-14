@@ -3,7 +3,7 @@ function db(ns) { return lib(ns)} // name.$ /null
 function dbe(ns) { return db(ns).entries() }
 
 
-
+/*
 //★★★
 function ef(f,E) { if(E==null) E=e;return E.field(f) } // polja iz druge baze ★
 // chk ★★★★
@@ -13,3 +13,4 @@ function mf(f,ff)    {return moment(  field(f)).format(ff)} // field ★
 function sys(x)  { s=system().os;
   return x==0?s:x==1?s.slice(8,9): "sys(#) 0=OS, 1=os#, /=help"
 //???★★★ "   srt(FN$,/=dsc 1=asc" +"\n" }
+*/
