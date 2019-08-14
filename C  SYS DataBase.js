@@ -10,7 +10,7 @@ function dbs(db,s,o) { if(s==null)s="S"; if(o==null)o=-1
      return a.field(s)>b.field(s) ? o:-o }} )}
 }
 function dbes(n.s,o) { if(s==null)s="S"; if(o==null)o=-1
-  db = lib().entries()
+  db = lib(n).entries()
   db.sort( {compare: function (a,b) { return a.field(s)>b.field(s) ? o: -o }})
   return db 
 }
