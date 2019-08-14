@@ -1,6 +1,7 @@
 function tp(n) {return typeof (n) }
 // date moment functions
-function mf(d,f) { if(f==null) f="DD.MM.YY HH:mm"; 
+function now() {return d=new Date() }
+function mf(d,f) { if(d==null) d=new Date(); if(f==null) f="DD.MM.YY HH:mm"; 
   return moment(d).format(f) }
 
 function df(x) { // if(x ==null) x =0
