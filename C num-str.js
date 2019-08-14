@@ -18,6 +18,6 @@ function GHnums() {
   s+="\n test    = 2test"
   s+="\n nmod(x,m)= mod"
   s+="\n = "
-  s+="\n = "
+  s+="\n sp(n) = spaces " //★★★★<<<<
   
   log( s) }
