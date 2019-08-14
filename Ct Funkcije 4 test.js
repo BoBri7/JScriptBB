@@ -1,7 +1,4 @@
-function db(ns) { return lib(ns)}
-function dbe(ns) { return db(ns).entries() }
-
-function ef(f,E) { if(E==null) E=e;return E.field(f) }
+// date moment
 function mf(d,f) { if(f==null) f="DD.MM.YY HH:mm";
   return moment(d).format(f) }
 function bod(d)  { return mbe(d,0) }
