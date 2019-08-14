@@ -2,7 +2,7 @@ function GHnums() {
   s =  "★ GHnum   ret.v. ★ "
   s+="\n nmn(x,y) = min "
   s+="\n nmx(x,y) = max "
-  s+="\n N(x)     = num /0 "
+  s+="\n N(x)     = num /0 //parelseFloat (x,10) "
 
   s+="\n fNtd(x,d) # => th.delim # "
   s+="\n n(s)      $. => #  /#.3#,#=>#"
