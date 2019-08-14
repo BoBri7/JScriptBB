@@ -1,4 +1,0 @@
-// DataBase functions
-function db(ns) { return lib(ns)} // name.$ /null
-function dbe(ns) { return db(ns).entries() }
-function ef(f,E) { if(E==null) E=e;return E.field(f) }
