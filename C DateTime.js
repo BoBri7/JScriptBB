@@ -2,6 +2,10 @@ function tp(n) {return typeof (n) }
 // date moment functions
 function mf(d,f) { if(f==null) f="DD.MM.YY HH:mm"; 
   return moment(d).format(f) }
+
+function df(x) { // if(x ==null) x =0
+   return "YYMMDD DD.MM.YY YY.MM.DD.HH.mm".split(" ")[x] }  
+
 function bod(d) { return mbe(d,0) }
 function bom(d) { return mbe(d,1) }
 function boy(d) { return mbe(d,2) }
