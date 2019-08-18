@@ -1,8 +1,9 @@
-function tf(f,e) {if( e==null) {
-  n=field("Temp."+f)
-  if (n!=null)  n+= field("Temp.d"+f)/10 }
-  else { n=e.field("Temp."+f)
-  if (n!=null) n+=e.field("Temp.d"+f)/10}
+function tf(f,e) {d="Temp.d"+f;f ="Temp."+f
+  if( e==null) {
+  n=field(f)
+  if (n!=null)  n+= field(d)/10 }
+  else { n=e.field(f)
+  if (n!=null) n+=e.field(d)/10}
   return n}
 
 function v(v,d,e) {  if ( v == null ) return "~"
