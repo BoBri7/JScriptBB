@@ -14,3 +14,14 @@ function i(x,n,p) { if (p==1 && x >0 ) x="+"+x
 
 function ie(x,n,e) { // if (p==1 && x >0 ) x="+"+x
   return " "+(" ".repeat(n)+x+e).slice(-n+1)}
+
+// previous values
+function prv(i) {r=field("prev").split(",")[i] ;
+if(i==0) return mf(r.split("."),"D.M.YY HH:mm")
+else return Number(r)}
+
+// ?? 
+function dif(f,i) { return( field(f)) - prv(i) }
+
+function d(i) { v = "Temp" + "DS.BA.OS.SP".split(".")[i-1]
+  return field(v)-prv(i) }
