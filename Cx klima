@@ -1,0 +1,30 @@
+// send to calendar script
+
+log (" KLIMA insert CALENDAR  ok" )
+
+e = entry() ; fn = "SGC" ; 
+s = e.field("st").slice(-1)
+if ( e.field(fn) == false && s == ">" ) {
+   b=moment()+ 30*60000
+   x = b+ 5*60000
+//  l( r +" "+  t + " ", b)
+   //l("e",x)
+   i = intent("android.intent.action.INSERT"); 
+// Create Intent object 
+   i.data("content://com.android.calendar/events"); 
+// Data contains Google Calendar URI 
+   i.extra("title","K L I M A" ); 
+// Get event name from field Title 
+   i.extra("description", "popiši temperature + porabo" ); 
+// Get description from field Description
+   i.extraLong("beginTime", b )
+//entry().field("Begin").getTime()); 
+   i.extraLong("endTime", x)
+   i.extraLong("alarm", 0 )
+   i.extraLong("reminder", 0 )
+//i.extraLong("endTime", entry().field("End").getTime())
+   i.send(); // Send the message
+   e.set(fn, true)
+   log (" KLIMA insert CALENDAR  ok" )
+}
+else log (" KLIMA insert CALENDAR  ###" )
