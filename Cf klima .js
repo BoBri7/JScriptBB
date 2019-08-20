@@ -23,5 +23,5 @@ else return Number(r)}
 // ?? 
 function dif(f,i) { return( field(f)) - prv(i) }
 
-function d(i) { v = "Temp" + "DS.BA.OS.SP".split(".")[i-1]
+function diff(i) { v = "Temp" + "DS.BA.OS.SP".split(".")[i-1]
   return field(v)-prv(i) }
