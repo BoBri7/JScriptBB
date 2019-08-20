@@ -25,3 +25,5 @@ function dif(f,i) { return( field(f)) - prv(i) }
 
 function diff(i) { v = "Temp" + "DS.BA.OS.SP".split(".")[i-1]
   return field(v)-prv(i) }
+
+// 
