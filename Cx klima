@@ -1,5 +1,49 @@
-// send to calendar script
+//★★★ Nov zapis klima = konec zdaj  = last entry end now
+//~~~~~~~~~~~~~~~~~~~
 
+db = lib().entries(); e = db[0] ; w = new Object();
+function S(x) { return x.field("S") }
+cf = { compare: function(b,a) {return (S(a)-S(b))}} ;
+db.sort( cf); e =db[0] ; //v = moment()
+v = moment() -moment().startOf('day') - 3600000
+x = 60*5000
+v = (v/x).toFixed(0)*x; 
+log(x +" "+ moment(v).format(" H.mm"))
+// 
+e.set( "Izklop" , v ) ;
+// e.set( "dk"   ,5)  ; e.set( "dtzk" ,5)
+
+// d = e.field("dan");d=new Date(moment(d).add(1,"years"))
+// e.set("dan"   ,d)  //★★★ TEST EDIT DATE FIELD ★★★★
+
+
+d = moment( e.field("dan"))
+x = "xDan" ; dd = moment().diff(d , "days")
+
+if ( e.field(x)==0 ) {
+  if ( dd > 0 ) e.set( x, dd )
+}
+
+
+d = moment( e.field("dan"))
+x = "xDan" ; dd = moment().diff(d , "days")
+if ( e.field(x)==0 && dd > 0 ) e.set( x, dd )
+if ( e.field("ur") < 0 ) e.set( x, e.field(x)+1) // ★
+e.set("difD",dd+" "+ moment().diff(d , "hours"))  // ★
+
+
+log( "Trigger UpdE xDan ")
+e.recalc()
+//e.show()  //=====
+//
+
+
+
+
+
+
+// send to calendar script
+//~~~~~~~★★★★★★★
 log (" KLIMA insert CALENDAR  ok" )
 
 e = entry() ; fn = "SGC" ; 
