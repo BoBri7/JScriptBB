@@ -12,7 +12,7 @@ function MPh(d) { md=29.305
 }
 // vrne sliko faze iz dneva faze
 function MPs(d) {m=29.305;f="O ) D (D ★ (C C (".split(" ")
-  d = (d/m*f.length).toFixed(0)
+  d = (d/m*(f.length-1)).toFixed(0)
   return f[d]
 }
 // vrne sliko iz datuma
