@@ -1,0 +1,47 @@
+/*
+function MPh(d) { md=29.305
+  m="191126,191028,190928,190830,190801,190603,"
+  m+="190505,190405,190306,190204,0"
+  f=m.split(",").find( function(e) {
+    return e <= moment(d).format("YYMMDD") })
+  n= new Date(20+f.slice(0,2),f.slice(2,4)-1,f.slice(-2))
+  r= moment(d).diff(n,"days")
+  return  r -Math.floor(r/md) *md
+}
+function MP(d) {m=29.305;f="6O ) D (D ★ (C C (".split(" ")
+  d = (d/m*f.length).toFixed(0)
+  return f[d]
+} */
+
+// ghc d&t
+function mfd(d) { if(d==null) d= Date()
+  return moment(d).format("D.M.YY HH:mm") }
+
+function df(d,x) { if(d==null)d= Date() ;
+  f= "YYMMDD DD.MM.YY YY.MM.DD.HH.mm ".split(" ")
+  if(x<0){s=" ";for(i=0;i<f.length;i++){s+=i+"="+f[i]+" "}
+    return s }
+  else return moment(d).format(f[x==null?0:x] ) }
+
+function mbe(d,x){ d=moment(d==null ? Date() : d) ;
+  if(isS(x)) return d.end0f(x)
+  else { e=(x>0); x=dmyh(Math.abs(x)) ;
+  return e==true ? d.start0f(x) : d.end0f(x) }}
+
+function mad(d,n,x) {if(x==null)x=0;if(n==null)n=1 ;
+  return moment(d).add(n,dmyh(x)) }
+
+function dmyh(x) { 
+  s="day month year hour hour minute week" ;
+  return x==null ? s : s.split(" ")[x]}
+// n&s
+function typ(x) { return typeof(x) }
+function isI(x) { return Number.isInteger(x) }
+function isD(x) { return typeof(x) }
+function isN(x) { return isNumber(x)}
+function isA(x) { return isArray(x) }
+function isS(x) { return typeof(x)=="string" }
+function isEr(x){ return isNaN(x) }
+function intg(x){ return Math.trunc(x) }
+function abs(x) { return Math.abs(x) }
+//★★★★★★★★
