@@ -15,3 +15,4 @@ function MP(d) {m=29.305;f="O ) D (D ★ (C C (".split(" ")
   d = (d/m*f.length).toFixed(0)
   return f[d]
 }
+//★★★★★★
