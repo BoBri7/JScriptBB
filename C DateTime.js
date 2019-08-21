@@ -1,8 +1,11 @@
 function tp(n) {return typeof (n) }
 // date moment functions
 function now() {return d=new Date() }
+/// 
 function mf(d,f) { if(d==null) d=new Date(); if(f==null) f="DD.MM.YY HH:mm"; 
   return moment(d).format(f) }
+function mfd(d) { if(d==null) d=new Date(); 
+  return moment(d).format("DD.MM.YY HH:mm";) }
 
 function df(x) { // if(x ==null) x =0
    return "YYMMDD DD.MM.YY YY.MM.DD.HH.mm".split(" ")[x] }  
