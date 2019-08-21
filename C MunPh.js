@@ -10,9 +10,11 @@ function MPh(d) { md=29.305
   r= moment(d).diff(n,"days")
   return  r -Math.floor(r/md) *md
 }
-// vrne sliko faze
-function MP(d) {m=29.305;f="O ) D (D ★ (C C (".split(" ")
+// vrne sliko faze iz dneva faze
+function MPs(d) {m=29.305;f="O ) D (D ★ (C C (".split(" ")
   d = (d/m*f.length).toFixed(0)
   return f[d]
 }
+// vrne sliko iz datuma
+function MP(d) { return MPs(MPh(d)) } //★★
 //★★★★★★
