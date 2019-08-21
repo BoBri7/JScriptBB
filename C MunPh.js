@@ -1,4 +1,5 @@
 // Moon Phases
+// izračuna dan v lunini fazi
 function MPh(d) { md=29.305
   M = "191226s,190702m,190106m,0"
   m ="191126,191028,190928,190830,190801,190702,"
@@ -9,6 +10,7 @@ function MPh(d) { md=29.305
   r= moment(d).diff(n,"days")
   return  r -Math.floor(r/md) *md
 }
+// vrne sliko faze
 function MP(d) {m=29.305;f="O ) D (D ★ (C C (".split(" ")
   d = (d/m*f.length).toFixed(0)
   return f[d]
