@@ -8,7 +8,7 @@ function MPh(d) { md=29.5344
     return e <= moment(d).format("YYMMDD") })
   n= new Date(20+f.slice(0,2),f.slice(2,4)-1,f.slice(-2))
   r= moment(d).diff(n,"days")
-  return  r -Math.floor(r/md) *md
+  return Marh.round(r -Math.floor(r/md) *md)
 }
 // vrne sliko faze iz dneva faze
 function MPs(d) {m=29.5344;f="O ) D (D ★ (C C (".split(" ")
