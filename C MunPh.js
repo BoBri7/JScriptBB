@@ -17,4 +17,4 @@ function MPs(d) {m=29.5344;f="O ) D (D ★ (C C (".split(" ")
 }
 // vrne sliko iz datuma
 function MP(d) { return MPs(MPh(d)) } //★★
-//★★★★★★
+//★★★★★★★★
