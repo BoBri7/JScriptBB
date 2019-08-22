@@ -67,4 +67,5 @@ function GHnums() {
   s+="\n = "
   s+="\n sp(n) = spaces " //★★★★<<<<
   return s }
+
 //★★★★★
