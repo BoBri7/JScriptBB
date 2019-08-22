@@ -1,4 +1,15 @@
-// ★★★ format N th.delimited 
+// ★★★ format N th.delimited  
+// ★★ n => th.delimited format ★★
+function fN(n,d) { if(n==null)n=0;if(d==null)d=2
+  n=n.toFixed(d).split('.');d=d>0? ","+n[1] :""
+  return n[0].replace(/\B(?=(\d{3})+(?!\d))/g,".")+d}
+// ★ th.d => num ★
+function td2n(n) {  function sj(s,i,j) {
+                    return s.split(i).join(j)}
+ // return n.split(".").join("").split(",").join(".")}
+  return sj(sj(n,".",""),",",".")}
+// ★ th.d => num ★
+function td2n2(s) { s = s.replace(/\./g,"")
 function fN(n,d) {s=(Number(n) < 0)?"-":"+"; 
   n=n.toFixed(d).split('.');
   n=n[0].replace(/\B(?=(\d{3})+(?!\d))/g,".")
