@@ -12,7 +12,19 @@ function fp(n)     { if(n==null) n=""; if(n!="" && n>=0) n="+"+n
                     return n } // ★★ isNan ★★
 function sign(x)   { return x>0?1:x<0?-1:0 } 
 
-//★★★★★
+/*  ★★★★★  TEST
+function in(n,d,l) ★★★ππππ★★★~~~
+
+function typ(x) { return typeof(x) }
+function isI(x) { return Number.isInteger(x) }
+function isD(x) { return typeof(x) }
+function isN(x) { return isNumber(x)}
+function isA(x) { return isArray(x) }
+function isS(x) { return typeof(x)=="string" }
+function isEr(x){ return isNaN(x) }
+function intg(x){ return Math.trunc(x) }
+function abs(x) { return Math.abs(x) }
+★★★ */
 
 function GHnums() { 
   s =  "★ GHnum   ret.v. ★ "
