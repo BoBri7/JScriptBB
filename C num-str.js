@@ -14,6 +14,13 @@ function sign(x)   { return x>0?1:x<0?-1:0 }
 
 /*  ★★★★★  TEST
 function in(n,d,l) ★★★ππππ★★★~~~
+function fN2(n,d) { n = n.toFixed(d) // .split('.');
+  m = parseInt(n).toString();
+  d = n.length > m.length ? ',' + n-m : '';
+  // while (rx.test(m)) {m=m.replace(rx, '$1'+','+'$2')}
+  m = m.replace(/\B(?=(\d{3})+(?!\d))/g, ".")
+  return  m  +" d"+ (parseFloat(n)- parseInt(n)) //★★★
+} //****~~~~~~~★★★
 
 function typ(x) { return typeof(x) }
 function isI(x) { return Number.isInteger(x) }
