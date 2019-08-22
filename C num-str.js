@@ -1,3 +1,16 @@
+// ★★★ format N th.delimited 
+function fN(n,d) {s=(Number(n) < 0)?"-":"+"; 
+  n=n.toFixed(d).split('.');
+  n=n[0].replace(/\B(?=(\d{3})+(?!\d))/g,".")
+  return n+","+n[1]}
+function td2n(n) {  function sj(s,i,j) {
+                    return s.split(i).join(j)}
+ // return n.split(".").join("").split(",").join(".")}
+  return sj(sj(n,".",""),",",".")}
+
+function td2n2(s) { s = s.replace(/\./g,"")
+  return s.replace(",",".") }
+// ★★★★★
 
 function pf(n)     {return parseFloat(n);}
 function pi(n)     {return parseInt(n,10);}
