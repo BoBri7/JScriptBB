@@ -1,8 +1,9 @@
 // ★★ n => th.delimited format ★★
-function fN(n,d) {s=(Number(n) < 0)?"-":"+"; 
-  n=n.toFixed(d).split('.');
-  n=n[0].replace(/\B(?=(\d{3})+(?!\d))/g,".")
-  return n+","+n[1]}
+//function fN(n,d) {s=(Number(n) < 0)?"-":"+"; 
+function fN(n,d) { if(n==null)n=0;if(d==null)d=2
+  n=n.toFixed(d).split('.');d=d>0? ","+n[1] :""
+  return n[0].replace(/\B(?=(\d{3})+(?!\d))/g,".")+d}
+  //return n+","+n[1]}
 // ★ th.d => num ★
 function td2n(n) {  function sj(s,i,j) {
                     return s.split(i).join(j)}
