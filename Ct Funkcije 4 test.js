@@ -1,3 +1,18 @@
+// ★★ n => th.delimited format ★★
+function fN(n,d) {s=(Number(n) < 0)?"-":"+"; 
+  n=n.toFixed(d).split('.');
+  n=n[0].replace(/\B(?=(\d{3})+(?!\d))/g,".")
+  return n+","+n[1]}
+// ★ th.d => num ★
+function td2n(n) {  function sj(s,i,j) {
+                    return s.split(i).join(j)}
+ // return n.split(".").join("").split(",").join(".")}
+  return sj(sj(n,".",""),",",".")}
+// ★ th.d => num ★
+function td2n2(s) { s = s.replace(/\./g,"")
+  return s.replace(",",".") }
+
+
 // date moment
 function mf(d,f) { if(f==null) f="DD.MM.YY HH:mm";
   return moment(d).format(f) }
