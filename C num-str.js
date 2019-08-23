@@ -1,3 +1,18 @@
+//*  
+★★★ ToDo ★★★
+function mid(S,B,N) { //★★ B<0=>Left ★★ N<0 reže konec ★★
+  if(B<0) {N = -B ; B=0 ;}
+  if(N<0) {N = S.length-B+N}
+  N= isNaN(N) ? S.length:B+N 
+  return B+" "+N+" >"+ S.substring(B,N) +"<"}
+function left(S,N) { // ★★ N<0 => right ★★
+  B=0; if(N<0) { B=S.length+N;N=S.length}
+  return S.substring(B,N) }
+/* ★★★★ test
+P ="projekt"
+log ( mid( P,-3) +" "+ mid(P,2,-3)  +" "+ mid(P,-2,-3) )
+log ( left( P, 3) +" "+ left(P,-4) )
+*/
 // ★★★ format N th.delimited  
 // ★★ n => th.delimited format ★★
 function fN(n,d) { if(n==null)n=0;if(d==null)d=2
