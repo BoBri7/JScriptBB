@@ -1,5 +1,6 @@
 //*  
 ★★★ ToDo ★★★
+// s.toUpperCase()); ★★★★★★ toLowerCase ★★
 function mid(S,B,N) { //★★ B<0=>Left ★★ N<0 reže konec ★★
   if(B<0) {N = -B ; B=0 ;}
   if(N<0) {N = S.length-B+N}
