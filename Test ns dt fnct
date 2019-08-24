@@ -1,4 +1,5 @@
 // ★★ n => th.delimited format ★★
+function td(N) {return N.toLocaleString('de-DE')}
 //function fN(n,d) {s=(Number(n) < 0)?"-":"+"; 
 function fN(n,d) { if(n==null)n=0;if(d==null)d=2
   n=n.toFixed(d).split('.');d=d>0? ","+n[1] :""
