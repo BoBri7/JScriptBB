@@ -9,7 +9,7 @@ function MP(D,X) { F=29.5344; d1 = "  •  " ; d2 = " • "
     D+=       "7=d.m.y 8=Md 9=aMF ★"
     return "★★★★★★★\n★ MP(D.X) ★ "+Vn+D+"\n★★★★"} // exit
   if ( moment(D).format("Y.MM") < "2000.01"){
-     return "Y < 2000" + moment(D).format("<= Y.M.D ★")}
+     return "Y < 2000" +D+" // " + moment(D).format("<= Y.M.D ★")}
   M="191126,191028,190928,190830,190801,190702,190603,";
   M+="190505,190405,190306,190204,100115,"
   M+="010124,000001"; M = M.split(",");
