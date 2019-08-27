@@ -29,4 +29,5 @@ function MP(D,X) { F=29.5344;
     case 1 :{ return M+" ."+N+"."         ; break}  
     default: return M 
   } //★ end sw
-}   //★ END functuon MP ★★★ */
+}   
+//★ END functuon MP ★★★ */
