@@ -18,14 +18,14 @@ function MP(D,X) { F=29.5344;
   N= N-F*Math.floor(N / (F))
   NF= Math.round( N / F * (MF.length-1) )
   if ( isNaN( NF) || NF < 0 ) NF = 0 //★★★★★★★★★!
-  N= ("0"+N).slice(-2) +xxx
+  N= ("0"+N).slice(-2)
   M= MF[NF]  
  switch ( Number(X) ) {
     case 9 :{ return MF; break }
     case 8 :{ return D.format("DD.MM.YY HH:mm"); break }
     case 3 :{ return M+" ."+N+"."+NF+"." ; break }
     case 2 :{ return M+" ."+NF+"."       ; break }
-    case 1 :{ return M+" ."+N+"."         ; break}   // ★ 20
+    case 1 :{ return M+" ."+N+"."         ; break}  
     default: return M 
   } //★ end sw
 }   //★ END functuon MP ★★★ */
