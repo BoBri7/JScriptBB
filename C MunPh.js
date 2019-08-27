@@ -17,7 +17,6 @@ function MP(D,X) { F=29.5344;
   N= moment(D).diff(M,"days") // ★★★★
   N= N-F*Math.floor(N / (F))
   NF= Math.round( N / F * (MF.length-1) )
-  if ( isNaN( NF) || NF < 0 ) NF = 0 //★★★★★★★★★!
   N= ("0"+N).slice(-2)
   M= MF[NF]  
  switch ( Number(X) ) {
