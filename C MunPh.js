@@ -3,7 +3,7 @@ function MP(D,X) { F=29.5344;
 
   MF=" × . ).D.(D.O.(C.C.( . x ".split(".") 
   if(D ==null || isNaN(D) ) {
-    D="X= 0:F 1=dDf 2=dDf.F 3=dD.dDf.F 8=Df 9=AMF ★\n"
+    D="X= 0:F 1=F.dD 2=F.dDf 3=F.dD.dDf 8=Df 9=aMF ★\n"
     return "\n★ MP(D.X) ★ "+D } // exit
   if ( moment(D).format("Y.MM") < "2000.01"){
      return "Y < 2000" + moment(D).format("<= Y.M.D ★")}
@@ -26,9 +26,9 @@ N.slice(2,4)-1,N.slice(-2)-2,0) */
  switch ( Number(X) ) {
     case 9 :{ return MF; break }
     case 8 :{ return D.format("DD.MM.YY HH:mm"); break }
-    case 3 :{ return N+" "+NF+" "+M; break }
-    case 2 :{ return NF+" "+M; break }
-    case 1 :{ return NF  ; break}   // ★ 20
+    case 3 :{ return M+" "+N+" "+NF ; break }
+    case 2 :{ return M+" "+NF       ; break }
+    case 1 :{ return M+" "+N        ; break}   // ★ 20
     default: return M 
   }
 }  
