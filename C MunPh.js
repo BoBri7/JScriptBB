@@ -1,3 +1,4 @@
+//★ ver m tor., 27. avg. 2019 11:26  ★★
 function MP(D,X) { F=29.5344;
   function ii(S,I){ return S.slice(I*2,I*2+2) }
 
