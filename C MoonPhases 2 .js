@@ -5,7 +5,7 @@ function MP(D,X) { F=29.5344;
   MF=" × . ).D.(D.O.(C.C.( . x ".split(".") 
   if(D ==null || isNaN(D) ) {
     D ="\n★ X=0:F 1=F.dD 2=F.dDf 3=F.dD.dDf 8=Df 9=aMF ★"
-    return "★★★★★★★\n★ MP(D.X) ★ "+Vn+D"\n★★★★"} // exit
+    return "★★★★★★★\n★ MP(D.X) ★ "+Vn+D+"\n★★★★"} // exit
   if ( moment(D).format("Y.MM") < "2000.01"){
      return "Y < 2000" + moment(D).format("<= Y.M.D ★")}
   M="191126,191028,190928,190830,190801,190702,190603,";
