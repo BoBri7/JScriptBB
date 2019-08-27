@@ -4,8 +4,9 @@ function MP(D,X) { F=29.5344;
 
   MF=" × . ).D.(D.O.(C.C.( . x ".split(".") 
   if(D ==null || isNaN(D) ) {
-    D="X= 0:F 1=F.dD 2=F.dDf 3=F.dD.dDf 8=Df 9=aMF ★\n"
-    return "\n★ MP(D.X) ★ "+D } // exit
+    D ="X= 0:F 1=F.dD 2=F.dDf 3=F.dD.dDf 8=Df 9=aMF ★\n"
+    D+="//★ ver M tor.27.avg.19 11:26  ★\n★★★★"
+    return "★★★★★★★\n★ MP(D.X) ★ "+D } // exit
   if ( moment(D).format("Y.MM") < "2000.01"){
      return "Y < 2000" + moment(D).format("<= Y.M.D ★")}
   M="191126,191028,190928,190830,190801,190702,190603,";
