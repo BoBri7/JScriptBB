@@ -1,12 +1,11 @@
-//★ ver m tor., 27. avg. 2019 11:26  ★★
+Vn ="★ Ver M tor.27.avg.19 11:26 ★"
 function MP(D,X) { F=29.5344;
   function ii(S,I){ return S.slice(I*2,I*2+2) }
 
   MF=" × . ).D.(D.O.(C.C.( . x ".split(".") 
   if(D ==null || isNaN(D) ) {
-    D ="X= 0:F 1=F.dD 2=F.dDf 3=F.dD.dDf 8=Df 9=aMF ★\n"
-    D+="//★ ver M tor.27.avg.19 11:26  ★\n★★★★"
-    return "★★★★★★★\n★ MP(D.X) ★ "+D } // exit
+    D ="\n★ X=0:F 1=F.dD 2=F.dDf 3=F.dD.dDf 8=Df 9=aMF ★"
+    return "★★★★★★★\n★ MP(D.X) ★ "+Vn+Vn+"\n★★★★"} // exit
   if ( moment(D).format("Y.MM") < "2000.01"){
      return "Y < 2000" + moment(D).format("<= Y.M.D ★")}
   M="191126,191028,190928,190830,190801,190702,190603,";
