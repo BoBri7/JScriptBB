@@ -1,6 +1,6 @@
 Vn ="★ Ver 3 tor.27.avg.19 11:26 ★"
-function MP(D,X) { F=29.5344;
-  function ii(S,I){ return S.slice(I*2,I*2+2) }
+function MP(D,X) { F=29.5344; d1 = "  •  " d2 = " • "
+  function ii(S,I){ return S.slice(I*2,I*2+2) } //★inFun★
 
   MF=" × . ).D.(D.O.(C.C.( . x ".split(".") 
   if(D ==null || isNaN(D) ) {
@@ -12,7 +12,7 @@ function MP(D,X) { F=29.5344;
   M+="190505,190405,190306,190204,100115,"
   M+="010124,000001"; M = M.split(",");
   // mrki S+L★   MRK="191226s,190702m,190106m,0"; //mrki
-  N=M.find( function(X) { //~~ inFun ~~~★★
+  N=M.find( function(X) {                      //★sort
     return X <= moment(D).format("YYMMDD") })  
   M= new Date(20+ii(N,0),ii(N,1)-1,ii(N,2),12,0)
   N= moment(D).diff(M,"days") // ★ 
@@ -20,13 +20,16 @@ function MP(D,X) { F=29.5344;
   N= N-F*Math.floor(N / F)
   NF= Math.round( N / F * (MF.length-1) )
   N= (" 0"+N).slice(-3)  //★★★
-  M= MF[NF]  
- switch ( Number(X) ) {
+  M= MF[NF]
+  switch ( Number(X) ) {
     case 9 :{ return MF; break }
-    case 8 :{ return D.format("DD.MM.YY HH:mm"); break }
-    case 3 :{ return M+" ."+N+"."+NF+"." ; break }
-    case 2 :{ return M+" ."+NF+"."       ; break }
-    case 1 :{ return M+" ."+N+"."         ; break}  
+    case 8 :{ return moment(D).format("DD.MM.YY HH:mm")
+             ; break }
+    case 4 :{ return M+d1+N+d2+NF+d2+F+d2 ; break }
+    case 3 :{ return M+d1+N+d2+NF+d2      ; break }
+    case 2 :{ return M+d1+NF+d2           ; break }
+    case 1 :{ return M+d1+N+d2            ; break }  
+    case 0 :{ return M+d2;               ; break }
     default: return M 
   } //★ end sw
 }   
