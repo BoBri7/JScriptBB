@@ -11,13 +11,13 @@ function MP(D,X) { F=29.5344;
   M+="190505,190405,190306,190204,100115,"
   M+="010124,000001"; M = M.split(",");
   // mrki S+L★   MRK="191226s,190702m,190106m,0"; //mrki
-  N=M.find( function(X) {
+  N=M.find( function(X) { //~~ inFun ~~~★★
     return X <= moment(D).format("YYMMDD") })  
   M= new Date(20+ii(N,0),ii(N,1)-1,ii(N,2),12,0)
   N= moment(D).diff(M,"days") // ★★★★
-  N= N-F*Math.floor(N / (F))
+  N= N-F*Math.floor(N / F)
   NF= Math.round( N / F * (MF.length-1) )
-  N= ("0"+N).slice(-2)
+  N= (" 0"+N).slice(-3)  //★★★
   M= MF[NF]  
  switch ( Number(X) ) {
     case 9 :{ return MF; break }
