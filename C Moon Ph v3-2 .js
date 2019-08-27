@@ -1,9 +1,9 @@
-Vn ="★ Ver 3.2. tor.27.avg.19 13:00   ★"
+Vn ="★ Ver 3.2. tor.27.avg.19 13:30   ★"
 function MP(D,X) { F=29.5344; d1 = "  •  " ; d2 = " • "
   function ii(S,I){ return S.slice(I*2,I*2+2) } //★inFun★
   MF=" × . ).D.(D.O.(C.C.( . x ".split(".") 
-  if(D==8) { return " Mf: [" +MF +"]"; break }
-  if(D==8) { return " Mf="+F+"dni "; break }
+  if(D==9) { return " Mf: [" +MF +"]"; exit }
+  if(D==8) { return " Mf="+F+"dni "; exit }
   if(D==null || isNaN(D) ) {
     D ="\n★ X=0:F 1=F.dD 2=F.dDf 3=F.dD.dDf 4=3+dM "
     D+=       "7=d.m.y 8=Md 9=aMF ★"
