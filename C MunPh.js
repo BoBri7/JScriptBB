@@ -14,7 +14,8 @@ function MP(D,X) { F=29.5344;
   N=M.find( function(X) { //~~ inFun ~~~★★
     return X <= moment(D).format("YYMMDD") })  
   M= new Date(20+ii(N,0),ii(N,1)-1,ii(N,2),12,0)
-  N= moment(D).diff(M,"days") // ★★★★
+  N= moment(D).diff(M,"days") // ★ 
+        // ★★ ne rabim zamika 1/2 mlaja /end! ★★
   N= N-F*Math.floor(N / F)
   NF= Math.round( N / F * (MF.length-1) )
   N= (" 0"+N).slice(-3)  //★★★
