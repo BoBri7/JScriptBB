@@ -1,11 +1,25 @@
 //*  
 ★★★ ToDo ★★★
 // s.toUpperCase()); ★★★★★★ toLowerCase ★★
+
+function trim(SS) {if(SS==null) return ""
+   return SS.replace(/ /g,"" ) }
+ //  String.prototype.trimStart() .trimEnd() ★★★
+
 function mid(S,B,N) { //★★ B<0=>Left ★★ N<0 reže konec ★★
   if(B<0) {N = -B ; B=0 ;}
   if(N<0) {N = S.length-B+N}
   N= isNaN(N) ? S.length:B+N 
   return B+" "+N+" >"+ S.substring(B,N) +"<"}
+
+function mid2(S,B,N) { if (B==null) B= S.length+N,N=-N
+//★★ B<0=>Left ★★ N<0 reže konec ★★
+  if(B<0) {N = -B ; B=0 ;}
+  if(N<0) {N = S.length-B+N}
+  N= isNaN(N) ? S.length:B+N 
+  return  S.substring(B,N) +"<"+B+" "+N
+} //★ mid2("123456",null,-2) => 56 ★
+//★★★★^
 function left(S,N) { // ★★ N<0 => right ★★
   B=0; if(N<0) { B=S.length+N;N=S.length}
   return S.substring(B,N) }
