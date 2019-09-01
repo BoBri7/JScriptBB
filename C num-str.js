@@ -1,7 +1,12 @@
-//*  
-★★★ ToDo ★★★
-// s.toUpperCase()); ★★★★★★ toLowerCase ★★
+/*  ★★★ ToDo ★★★
+s.toUpperCase()); ★★★★★★ 
+s.toLowerCase ★★
 
+
+★★★★★ */
+function chr(Nn) { return String.fromCharCode(NN)}
+function asc(CH) { return CH.charCodeAt(0) }
+                 
 function trim(SS) {if(SS==null) return ""
    return SS.replace(/ /g,"" ) }
  //  String.prototype.trimStart() .trimEnd() ★★★
