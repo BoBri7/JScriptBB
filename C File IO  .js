@@ -1,10 +1,14 @@
-function Fo(Fn) { return file(Fn) } 
-function Fw(Fn,txt) {
-  Fn.writeLine(txt); }
-function Fc(Fn) { Fn.close() }
-
-function Fr(Fn) { return Fn.readLines() }  
-
+function Fo(Fn)     { return file(Fn)    } 
+function Fw(Fn,txt) { Fn.writeLine(txt); }
+function Fc(Fn)     { Fn.close()         }
+function Fx(Fn)     { return Fn.exists() }
+function Fl(Fn)     { return Fn.length() }
+function Fp(Fn)     { return Fn.getLineNumber() }
+                     
+function Frl(Fn) { return Fn.readLine()  }
+function Frl(Fn) { return Fn.readLines() }  
+function Fra(Fnl { return Fn.readAll()   }
+function Frc(Fn) { return Fn.readChar()  }
 
 /*
 function Fw(Fn,txt) {  Fn = file(Fn); 
@@ -67,5 +71,3 @@ The length, in bytes, of the file, or 0L if the file does not exist.
 
 Files Examples
 See Trigger Examples#Files Examples. 
-
-*/ ★★★★★★
