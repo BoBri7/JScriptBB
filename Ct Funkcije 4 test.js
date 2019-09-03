@@ -11,7 +11,7 @@ function td2n(n) {  function sj(s,i,j) {
 // ★ th.d => num ★
 function td2n2(s) { s = s.replace(/\./g,"")
   return s.replace(",",".") }
-
+function fn(n,d) {}  //?  parseLocal? 
 
 // date moment
 function mf(d,f) { if(f==null) f="DD.MM.YY HH:mm";
