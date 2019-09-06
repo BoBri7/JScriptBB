@@ -4,22 +4,19 @@ function Fx(Fn)     { return Fn.exists() }
 function Fl(Fn)     { return Fn.length() }
 function Fp(Fn)     { return Fn.getLineNumber() }
 
-
 function Fw( Fn,txt) { Fn.write(text)    }
 function Fwl(Fn,txt) { Fn.writeLine(txt) }
 
 function Frc(Fn) { return Fn.readChar()  }
 function Frl(Fn) { return Fn.readLine()  }
 function FrL(Fn) { return Fn.readLines() }  
-function Fra(Fnl { return Fn.readAll()   }
+function Fra(Fn) { return Fn.readAll()   }
+
 function FR(Fn) { Fn = file(Fn); 
   Rl = Fn.readLines(); Fn.close(); return Rl } 
-/*
-function Fw(Fn,txt) {  Fn = file(Fn); 
-  Fn.writeLine(txt);   Fn.close()    }
-function Fr(Fn) { return Fn.readLines() }  
- */
-/* / ★★★★★
+function FRa(Fn) { Fn = file(Fn); Fn.close(); 
+  return Fn.readLines();} 
+/* / ★★★★★★★★★★★★★★★★ 
 Working with files
 With scripts, you can read or write files located in the device's internal memory or on the SD card. All file operations are performed by the File object, which is obtained via a global function called file().
 
