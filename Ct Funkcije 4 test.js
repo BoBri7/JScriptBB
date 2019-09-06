@@ -33,3 +33,7 @@ function nwd(a) {  if(a==null) return new Date()
 function mad(d,n,x) { if(x==null)x=0; if(n==null)n=1
   return moment(d).add(n,dmyh(x))//+"s")  
 }
+function chr(Nn) { return String.fromCharCode(NN)}
+function asc(CH) { return CH.charCodeAt(0) }
+function mid(S,B,N) { if(N==null) N=1
+  return S.slice(B,B+N) }
