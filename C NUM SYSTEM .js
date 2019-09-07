@@ -6,7 +6,8 @@
   s+=" N2X(N,C) N10 => C/max 62"
   s+="★N2C & C2N  enako do C<=36 "
   s+=" 8nt(n)  >> num ★ "
-  return s+"\n ★ EndHelp ★\n" }
+  return s+"\n ★ EndHelp ★\n" 
+ } //★ end help ★
 
 function N2C(N,C) { if (C==null) C=36
   return N.toString(36) }
