@@ -6,7 +6,7 @@ function u3s() {
   s+=" Sn(d)   Ret: actSez- Sez(d)  \n"
   s+=" df(d,f) Ret: format(m(d,f=d.m.yy) \n"
   s+=" S(s,x)  Ret:x>0 left(s.x>0) / right(s.x<0) \n"
-  
+  s+="dow(d,n) Ret: slo dow \n "
 return s + "★ ★ ★\n" }
   
 function Sez(D) { if(D==null) D=new Date()
@@ -32,5 +32,15 @@ function gfer(fn) {
 
 function gf(fn,E) {
   return E==null ? field(fn) : E.field(fn)}
+
+function dow(DT,NN) { 
+ // if ( DT==null ) DT = new Date()
+  if ( isNaN(DT) ) DT = new Date()
+  if ( isNaN(NN) ) NN=3  
+  Dd = moment(DT).format("d")
+  Sd ="nedelja.ponedeljek.torek.sreda."
+  Sd+="četrtek.petek.sobota.nedelja"
+  return Sd.split(".")[Dd].slice(0,NN)  
+}
 
 // ★★ END ★★
