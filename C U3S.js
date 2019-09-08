@@ -7,6 +7,7 @@ function u3s() {
   s+=" df(d,f) Ret: format(m(d,f=d.m.yy) \n"
   s+=" S(s,x)  Ret:x>0 left(s.x>0) / right(s.x<0) \n"
   s+="dow(d,n) Ret: slo dow \n "
+  s+="now()    Ret: now \n"
 return s + "★ ★ ★\n" }
   
 function Sez(D) { if(D==null) D=new Date()
@@ -42,5 +43,5 @@ function dow(DT,NN) {
   Sd+="četrtek.petek.sobota.nedelja"
   return Sd.split(".")[Dd].slice(0,NN)  
 }
-
+function now() { return new Date() }
 // ★★ END ★★
