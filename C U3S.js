@@ -18,7 +18,7 @@ function Sz(D)   { D = Sez(D) ;
 
 function Sn(D)  { return Sez() - Sez(D) }
 
-function df(D,F){ if (F==null) f="D.M.YY"
+function df(D,F){ if (F==null) F="D.M.YY"
   return moment(D).format(F)            }
 
 function S(S,X) { S=String(S) ;
