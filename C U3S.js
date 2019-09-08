@@ -7,9 +7,10 @@ function u3s() {
   
 return s + "★ ★ ★\n" }
   
-function Sez(D) { D=moment(D).add(-188,"day")
+function Sez(D) { if(D==null) D=new Date()
+  D=moment(D).add(-188,"day")
   return Number(D.format("YY"))         }
-funtion Sz(D)   { D = Sez(D) ;
+function Sz(D)   { D = Sez(D) ;
   return D+"/"+(D+1)                    }
 function Sn(D)  { return Sez() - Sez(D) }
 function S(S,X) { S=String(S) ;
