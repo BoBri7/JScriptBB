@@ -24,7 +24,7 @@ function df(D,F){ if (F==null) F="D.M.YY"
 function S(S,X) { S=String(S) ;
   return X>0? S.slice(0,X) : S.slice(X) }
 
-// 4 test ==>★★ test f(fn) ? e.f() ★★
-function f(fn) {return field(fn)        }
+// 4 test ==>★★ test gf(fn) ? e.f() ★★
+function gf(fn) {return field(fn)        }
 
 // ★★ END ★★
