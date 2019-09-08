@@ -25,8 +25,10 @@ function S(S,X) { S=String(S) ;
   return X>0? S.slice(0,X) : S.slice(X) }
 
 // 4 test ==>★★ test gf(fn) ? e.f() ★★
-function gfer(fn) {try { return field(fn) }
-  catch (er) { return e.field(fn) }}
+function gfer(fn) {
+  try { return field(fn) }
+  catch (er) { return e.field(fn) }
+}
 
 function gf(fn,E) {
   return E==null ? field(fn) : E.field(fn)}
