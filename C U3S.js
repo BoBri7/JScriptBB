@@ -8,7 +8,6 @@ return s + "★ ★ ★\n" }
   
 function Sez(D) { 
   return Number(moment(D).add(-188,"day").format("YY")) }
-function Sn(D) {
-  return Sez() - Sez(D) }
+function Sn(D)  { return Sez() - Sez(D) }
 function S(S,X) { return X>0? S.slice(0,X) :S.slice(X) }
 // ★★ END ★★
