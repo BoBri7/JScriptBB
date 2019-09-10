@@ -17,18 +17,19 @@ function FS( SS, LL) { NN =0 // pad right ★★
  if ( SS==null ) return FSh()
  else {     
   for ( ii=0; ii< SS.length; ii++) {
-    NN+= CL( SS.charCodeAt(ii) ) }
+    NN+= CL( SS.charAt(ii) ) }
   return SS + " ".repeat( Math.max(0,LL-NN/20 )* 2.22 ) 
   // +">"+NN.toFixed(1)
 }}
 function CL( Ch) { 
+  if (Ch==null ) return FSh() ; else {
  s ="b1bbbbbbk1bb9bbgggggggggggzg1gg999mkqm4dcfk7a9akkkkk"
  s+="kkkkk87ijihvnmnnkjopajmjvpomomllnmvmll9e9fgbjkikjckj"
  s+="98i9vjkkkcibjhqhhhc9cogggggggggggggggmgggggggggggggg"
  s+="ghg99jkpi8lfsggj1sgdjddbkh99dggqrrhnnnnnnxnkkkkaaaan"
  s+="poooopjonnnmllljjjjjjuijjjj9999ljkkkkkkkjiijhkh"
  return parseInt( s.charAt( Ch.charCodeAt(0) ),36 )
-}
+}}
 
 //★★★★★
 /*
