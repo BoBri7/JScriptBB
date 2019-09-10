@@ -37,7 +37,7 @@ function CL( Ch) {
   s+="kokpjpka9a9a9a9a9thj9mijj9j9jbjc" // 289-320
   s+="j9pjpjpjjokokokokxwmcmcmclililil" // 321-352
   s+="ilblclbnjnjnjnjnjnjvqlhllhlhlh9l" // 353-384
-  return parseInt( s.charAt( Ch.charCodeAt(0) ),36 )
+  return parseInt( s.charAt( Ch.charCodeAt(0) -1),36 )
  }
 }
 
