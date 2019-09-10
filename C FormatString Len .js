@@ -14,11 +14,11 @@ function C2N(S,C) { if (C==null) C=36
   return parseInt(S,36) }
 
 function FS( SS, LL) { NN =0 // pad right ★★
- if ( ss ==null ) return FSh()
+ if ( SS==null ) return FSh()
  else {     
   for ( ii=0; ii< SS.length; ii++) {
     NN+= CL( SS.charCodeAt(ii) ) }
-  return SS + " ".repeat( Math.max(0,LL-NN/20 )* 2.15 ) 
+  return SS + " ".repeat( Math.max(0,LL-NN/20 )* 2.22 ) 
   // +">"+NN.toFixed(1)
 }}
 function CL( Ch) { 
