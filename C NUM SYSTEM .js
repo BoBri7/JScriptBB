@@ -4,8 +4,8 @@
   s ="\n ★★ Številski sistemi ★★"
   s+=" X2N(N,C) N/C/max62 => 10"
   s+=" N2X(N,C) N10 => C/max 62"
-  s+="★N2C & C2N  enako do C<=36 "
-  s+=" 8nt(n)  >> num ★ "
+  s+=" *N2C & C2N  enako do C<=36 "
+  s+=" int(n)  >> num ★ "
   return s+"\n ★ EndHelp ★\n" 
  } //★ end help ★
 
@@ -15,28 +15,31 @@ function C2N(S,C) { if (C==null) C=36
   return parseInt(S,36) }
 function int(x) { return Math.floor(x) }
 
-function X2N(Nn, Cn) { rv =0 ; f =1 ; Nn=Nn.split("")
-  Ss ="0123456789" 
+function x2xs() {  Ss ="0123456789" 
   Ss+="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   Ss+="abcdefghijklmnopqrstuvwxyz"            
   //   123456789o123456789o123456
+  return Ss } //★★★             
+
+function X2N(Nn, Cn) { rv =0  ; Nn=Nn.split(""); // f =1
+ if (Cn <37) return C2N(Nn,Cn)
+ else {
   if (Cn==null) Cn=62
   Cn = Math.min( Cn,Ss.length)
 //  rv+=Nn
   for (ii=0; ii < Nn.length; ii++ ) {
     x = Nn[Nn.length-ii-1]
-    rv+=  Ss.indexOf(x)*f
-    f = f*Cn
+    rv+=  Ss.indexOf(x) //*f
+    //f = f*Cn
   } 
   return rv
-}  // ★★★★  
+}}  // ★★★★  
 
 function N2X( Nn, Cn, X) { 
+ if (Cn <37) return N2C(Nn,Cn)
+ else {
   if (X==null) { rv = ""
-    Ss ="0123456789" 
-    Ss+="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    Ss+="abcdefghijklmnopqrstuvwxyz"            
-    //   123456789o123456789o123456
+    Ss = x2xs()
     if (Cn==null) Cn=62
     Cn = Math.min( Cn,Ss.length)
   }
@@ -46,7 +49,7 @@ function N2X( Nn, Cn, X) {
   if (N>0) { rv+= N2X(N,Cn,1) ;  }
   rv+= Ss.slice(Nn,Nn+1)  
   return rv 
-} // ★★★★
+}} // ★★★★
 //>>>>>>>>>>>>>
 /*  ★★ test ★★
 log ( "★★BEGIN★★\n") ; c = 99
