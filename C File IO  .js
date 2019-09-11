@@ -4,7 +4,7 @@ function Fx(Fns)     { return Fns.exists() } //??★
 function Fl(Fno)     { return Fno.length() }
 function Fp(Fno)     { return Fno.getLineNumber() }
 
-function Fw( Fno,txt) { Fno.write(text)    }
+function Fw( Fno,txt) { Fno.write(txt)    }
 function Fwl(Fno,txt) { Fno.writeLine(txt) }
 
 function Frc(Fno) { return Fno.readChar()  }
