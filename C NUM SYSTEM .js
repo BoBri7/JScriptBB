@@ -10,9 +10,9 @@
  } //★ end help ★
 
 function N2C(N,C) { if (C==null) C=36
-  return N.toString(36) }
+  return N.toString(C) }
 function C2N(S,C) { if (C==null) C=36
-  return parseInt(S,36) }
+  return parseInt(S,C) }
 function int(x) { return Math.floor(x) }
 
 function x2xs() {  Ss ="0123456789" 
