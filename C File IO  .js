@@ -1,19 +1,20 @@
-function Fo(Fn)     { return file(Fn)    } 
-function Fc(Fn)     { Fn.close()         }
-function Fx(Fn)     { return Fn.exists() }
-function Fl(Fn)     { return Fn.length() }
-function Fp(Fn)     { return Fn.getLineNumber() }
+function Fo(Fns)     { return file(Fns)    } 
+function Fc(Fno)     { Fno.close()         }
+function Fx(Fns)     { return Fns.exists() } //??★
+function Fl(Fno)     { return Fno.length() }
+function Fp(Fno)     { return Fno.getLineNumber() }
 
-function Fw( Fn,txt) { Fn.write(text)    }
-function Fwl(Fn,txt) { Fn.writeLine(txt) }
+function Fw( Fno,txt) { Fno.write(text)    }
+function Fwl(Fno,txt) { Fno.writeLine(txt) }
 
-function Frc(Fn) { return Fn.readChar()  }
-function Frl(Fn) { return Fn.readLine()  }
-function FrL(Fn) { return Fn.readLines() }  
-function Fra(Fn) { return Fn.readAll()   }
+function Frc(Fno) { return Fno.readChar()  }
+function Frl(Fno) { return Fno.readLine()  }
+function FrL(Fno) { return Fno.readLines() }  
+function Fra(Fno) { return Fno.readAll()   }
 
-function FR(Fn) { Fn = file(Fn); 
-  Rl = Fn.readLines(); Fn.close(); 
+function FR(Fns) { Fno = file(Fns); 
+  Rl = Fno.readLines(); Fno.close(); //★★???
   return Rl } 
-function FRa(Fn) { Fn = file(Fn); Fn.close(); 
-  return Fn.readLines();} 
+function FRa(Fns) { Fno = file(Fns); Fno.close(); 
+  return Fno.readLines();} 
+//★★★ END FILE IO ★★★
