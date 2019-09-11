@@ -70,3 +70,4 @@ The length, in bytes, of the file, or 0L if the file does not exist.
 
 Files Examples
 See Trigger Examples#Files Examples. 
+*/
