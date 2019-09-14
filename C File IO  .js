@@ -1,4 +1,4 @@
-function Fo(Fns)     { return file(Fns)    } 
+function Fo(Fns)     { return file("/sdcard/"+Fns)    } 
 function Fc(Fno)     { Fno.close()         }
 function Fx(Fns)     { return Fns.exists() } //??★
 function Fl(Fno)     { return Fno.length() }
@@ -12,9 +12,11 @@ function Frl(Fno) { return Fno.readLine()  }
 function FrL(Fno) { return Fno.readLines() }  
 function Fra(Fno) { return Fno.readAll()   }
 
-function FR(Fns) { Fno = file(Fns); 
+function FR(Fns) { Fno = file("/sdcard/"+Fns); 
   Rl = Fno.readLines(); Fno.close(); //★★???
   return Rl } 
-function FRa(Fns) { Fno = file(Fns); Fno.close(); 
+function FRa(Fns) { Fno = file("/sdcard/"+Fns); Fno.close(); 
   return Fno.readLines();} 
 //★★★ END FILE IO ★★★
+
+// f = file("/sdcard/myfile.txt"); 
