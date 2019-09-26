@@ -24,7 +24,7 @@ function MP(D,X) { F=29.5344; d1 = "  •  " ; d2 = " • "
   N= (" 0"+N).slice(-3)  //★★★
   M= MF[NF]
   switch ( Number(X) ) {
-    case 9 :{ return MF; break }
+    case 9 :{ return MF.join("  "); break }
     case 8 :{ return d2+F+d2              ; break }
     case 7 :{ return moment(D).format("DD.MM.YY HH:mm")
            ; break }
@@ -32,7 +32,7 @@ function MP(D,X) { F=29.5344; d1 = "  •  " ; d2 = " • "
     case 3 :{ return M+d1+N+d2+NF+d2      ; break }
     case 2 :{ return M+d1+NF+d2           ; break }
     case 1 :{ return M+d1+N+d2            ; break }  
-    case 0 :{ return M+d2;               ; break }
+    case 0 :{ return M+d1+NF.toFixed(0) ;               ; break }
     default: return M 
   } //★ end sw
 }   
