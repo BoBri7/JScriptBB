@@ -21,7 +21,7 @@ function MP(D,X) { F=29.5344; d1 = "  •  " ; d2 = " • "
         // ★★ ne rabim zamika 1/2 mlaja /end! ★★
   N= N-F*Math.floor(N / F)
   NF= Math.round( N / F * (MF.length-1) )
-  N= (" 0"+N).slice(-3)  //★★★
+  N= ("  "+N).slice(-3)  //★★★
   M= MF[NF]
   switch ( Number(X) ) {
     case 9 :{ return MF.join("  "); break }
