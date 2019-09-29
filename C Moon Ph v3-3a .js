@@ -28,6 +28,8 @@ function MP(D,X) { F=29.5344; d1 = "  •  " ; d2 = " • "
     case 8 :{ return d2+F+d2              ; break }
     case 7 :{ return moment(D).format("DD.MM.YY HH:mm")
            ; break }
+    case 6 :{ return NF ; break }
+    case 5 :{ return N ; break }
     case 4 :{ return M+d1+N+d2+NF+d2+F+d2 ; break }
     case 3 :{ return M+d1+N+d2+NF+d2      ; break }
     case 2 :{ return NF +d2+M          ; break }
