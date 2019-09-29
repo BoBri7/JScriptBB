@@ -30,7 +30,7 @@ function MP(D,X) { F=29.5344; d1 = "  •  " ; d2 = " • "
            ; break }
     case 4 :{ return M+d1+N+d2+NF+d2+F+d2 ; break }
     case 3 :{ return M+d1+N+d2+NF+d2      ; break }
-    case 2 :{ return M+d1+NF+d2           ; break }
+    case 2 :{ return NF +d2+M          ; break }
     case 1 :{ return M+d1+N+d2            ; break }  
     case 0 :{ return M+d2+N   ; break }
    // case 0 :{ return M+d2+NF.toFixed(0)   ; break }
