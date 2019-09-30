@@ -1,3 +1,4 @@
+function io() { return "v 30. 9. 2019 " }
 function Fo(Fns,ext)     { if (ext==null) ext=".txt"
   return file("/sdcard/"+Fns +ext)    } 
 function Fc(Fno)     { Fno.close()         }
