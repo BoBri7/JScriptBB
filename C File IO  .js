@@ -1,4 +1,5 @@
-function Fo(Fns)     { return file("/sdcard/"+Fns)    } 
+function Fo(Fns,ext)     { if (ext==null) ext=".txt"
+  return file("/sdcard/"+Fns +ext)    } 
 function Fc(Fno)     { Fno.close()         }
 function Fx(Fns)     { return Fns.exists() } //??★
 function Fl(Fno)     { return Fno.length() }
