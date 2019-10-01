@@ -1,8 +1,15 @@
 /// ★★★★ DataBase functions  ★★★
 function dbf() {
   s ="\n ★★★ DB & SYS FUNCTIONS ★★ \n"
-  s+="  
-  
+  s+=" db( n)      ret lib  \n"
+  s+=" dbe(n)      ret entries  \n"
+  s+=" dbs(o,s,n)  ret db/sorted  ★OS \n"
+  s+=" F( n)       ret   field \n"
+  s+=" eF(n,e)     ret e.field \n"
+  s+=" sys(x)      ret OS.ver \n"
+  s+="  "
+  return s 
+}    
 function db( ns) { return lib(ns) } // name.$ /null
 function dbe(ns) { return db(ns).entries() }
 // dbs DBSort ★★★
@@ -28,8 +35,8 @@ function dbs(ord,sfn,dbn) {  db = lib(dbn).entries()
 function F(f)        {return field(f) }   
 function eF(f,E)     { if(E==null) E=e ;
   return E.field(f) } //★ E~druga baza ★
-function mf(x,f)     {if(f==null) f="<YY.MM.DD.HH.mm"
-  return moment(x).format(ff) }
+function mf(D,f)     {if(f==null) f="<YY.MM.DD.HH.mm"
+  return moment(D).format(ff) }
 
 //★★★★ SYS return OS # or $ ★★★★
 function sys(x)  { var s=system().os;
