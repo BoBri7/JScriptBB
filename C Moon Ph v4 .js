@@ -47,7 +47,7 @@ if ( moment(D).format("Y.MM") < "2000.01"){
  N= N-F*Math.floor(N / F)
  // N= N.toFixed(Fx) 
  NF= Math.round( N / F * (MF.length-1) )
- N= (String.fromCharCode(9).repeat(9)+N.toFixed(Fx)).slice(-5) //★★
+ N= (String.fromCharCode(9).repeat(9)+(N.toFixed(Fx))).slice(-5) //★★
  Mf= MF[NF]
  switch ( Number(X) ) {
   case 9 :{ return MF.join(", "); break }
