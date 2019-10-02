@@ -1,4 +1,4 @@
-function MP(D,X) { //var dd = moment(D).format("DD.MM.YY")
+function MP(D,X,Fx) { //var dd = moment(D).format("DD.MM.YY")
  function ii(S,I){ return S.slice(I*2,I*2+2) } //★inFun★
  var F=29.5344
  var MF=" ×. ).D.(D.O.(C.C.( "//. x " 
@@ -33,7 +33,7 @@ function MP(D,X) { //var dd = moment(D).format("DD.MM.YY")
   D+= "★       8: faza dni \n"
   D+= "★       9: faze \n"
   return D }
-
+if (Fx==null)Fx=0
 if ( D==null || isNaN(D) ) D = new Date() 
 if ( moment(D).format("Y.MM") < "2000.01"){ 
  return D+"= ? "+moment(D).format("Y.M.D < 2000 ? ")}
@@ -45,9 +45,9 @@ if ( moment(D).format("Y.MM") < "2000.01"){
  M= new Date(20+ii(N,0),ii(N,1)-1,ii(N,2),12,0)
  N= moment(D).add(0,"day").diff(M,"days") +1
  N= N-F*Math.floor(N / F)
- N= N.toFixed(1) 
+ N= N.toFixed(F) 
  NF= Math.round( N / F * (MF.length-1) )
- N= (String.fromCharCode(9).repeat(9)+N).slice(-6) //★★
+ N= (String.fromCharCode(9).repeat(9)+N).slice(-5) //★★
  Mf= MF[NF]
  switch ( Number(X) ) {
   case 9 :{ return MF.join(", "); break }
