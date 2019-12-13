@@ -9,7 +9,7 @@ function Fw( Fno,txt) { Fno.write(txt)    }
 function Fwl(Fno,txt) { Fno.writeLine(txt) }
 
 function FW(Fn,txt)     { 
-  let o = "/sdcard/"+Fn)   
+  let o = file( "/sdcard/MyData/"+Fn)   
   o.write(txt) 
   o.close()         
 }
