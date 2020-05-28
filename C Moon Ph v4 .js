@@ -54,7 +54,7 @@ if ( moment(D).format("Y.MM") < "2000.01"){
   case 8 :{ return F ; break }
   case 7 :{ return moment(D).format("DD.MM.YY") ; break }
   case 6 :{ return moment(M).format("DD.MM.YY") ; break }
-  case 5 :{ d=moment(d) ; n=moment()
+  case 5 :{ var d=moment(D) , n=moment()
     d =d.diff(moment(d).startOf("year"),"day") 
     n =n.diff(moment(n).startOf("year"),"day")
     return (n-d)%183; break }  //★ difDoY ★
