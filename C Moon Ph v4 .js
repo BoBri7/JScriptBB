@@ -55,7 +55,7 @@ if ( moment(D).format("Y.MM") < "2000.01"){
   case 7 :{ return moment(D).format("DD.MM.YY") ; break }
   case 6 :{ return moment(M).format("DD.MM.YY") ; break }
   case 5 :{ return "dif Yday"; break }  //★★
-  sase 4 :{ return "dif Mday"; break }  //★★
+  case 4 :{ return "dif Mday"; break }  //★★
   case 3 :{ return NF +" = "+Mf ; break }
   case 2 :{ return N ;         break }
   case 1 :{ return NF ;        break }
