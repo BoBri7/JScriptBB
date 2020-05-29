@@ -74,6 +74,6 @@ if ( moment(D).format("Y.MM") < "2000.01"){
 
 function mf(d,f) { if(f==null) f ="D.M.YY"
  return moment(d).format(f)
-//★ END functuon mf ★★★ 
+}//★ END functuon mf ★★★ 
               
 
