@@ -75,5 +75,13 @@ if ( moment(D).format("Y.MM") < "2000.01"){
 function mf(d,f) { if(f==null) f ="D.M.YY"
  return moment(d).format(f)
 }//★ END functuon mf ★ format date ★
-           
+// ★★★★★
+function dMP(d) { var t=MP(0)
+ return Math.abs(MP(moment(),2) - MP(d,2))
+/*
+ d=MP(moment(),2) - MP(d,2)
+ if ( Math.abs(d)>t/2) {
+ d=Math.round(t-Math.abs(dm))*(d<0?-1:1) }
+ return  d */
+} // ★ end dMP ★ razlika faz ★★
 
