@@ -71,3 +71,9 @@ if ( moment(D).format("Y.MM") < "2000.01"){
   default: return Mf
  } //★ end sw}
 }//★ END functuon MP ★★★ 
+
+function mf(d,f) { if(f==null) f ="D.M.YY"
+ return moment(d).format(f)
+//★ END functuon mf ★★★ 
+              
+
