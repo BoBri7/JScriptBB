@@ -62,8 +62,9 @@ if ( moment(D).format("Y.MM") < "2000.01"){
     d =d.diff(moment(d).startOf("year"),"day") 
     n =n.diff(moment(n).startOf("year"),"day")
     return (n-d)%183; break }  //★ difDoY ★
-  case 4 :{ var d = MP(D,2)
-    return N-d; break }        //★ difMF# ★
+  case 4 :{ var d= Math.abs(MP(D,2) - MP(moment(),2))
+    if (d>F/2) d = F-(d%F)
+    return d; break }        //★ difMF# ★
   case 3 :{ return NF +" = "+Mf ; break }
   case 2 :{ return N ;         break }
   case 1 :{ return NF ;        break }
