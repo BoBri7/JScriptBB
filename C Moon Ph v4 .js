@@ -65,7 +65,7 @@ if ( moment(D).format("Y.MM") < "2000.01"){
     return (n-d)%183; break }  //★ difDoY ★
   case 4 :{ var d= Math.abs(MP(D,2) - MP(moment(),2))
     if (d>F/2) d = F-(d%F)
-    return d; break }        //★ difMF# ★
+    return Math.round(d,0); break }        //★ difMF# ★
   case 3 :{ return NF +" = "+Mf ; break }
   case 2 :{ return N ;         break }
   case 1 :{ return NF ;        break }
