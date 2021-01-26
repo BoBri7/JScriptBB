@@ -1,9 +1,10 @@
 // izračun % rel.vl. iz temp°C in Rosišča
 
-f=0.07
+f=0.05
 function rv(t,r) { t=(r==null)?null:r-t
  function e(x){return Math.exp(x*f)}
- return (t==null)
-  ? "  ~"
-  : ("???"+(100*e(t)).toFixed(0)).slice(-3)
+ t = (t==null)
+  ? "~"
+  : (100*e(t)).toFixed(0)
+ return "???   "+t).slice(-3)
 }
