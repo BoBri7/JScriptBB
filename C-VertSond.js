@@ -4,7 +4,7 @@ function rv(t,r) {
 function e(x){return Math.exp(x*f)} 
  t = (t==null || r==null) 
  ? "~" 
- : (100*e(t)).toFixed(0) 
+ : (100*e(r-t)).toFixed(0) 
  return ("   "+t).slice(-3)
 }
 /* f=0.05
