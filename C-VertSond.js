@@ -5,5 +5,5 @@ function rv(t,r) { t=(r==null)?null:r-t
  function e(x){return Math.exp(x*f)}
  return (t==null)
   ? "  ~"
-  : ("  "+(100*e(t)).toFixed(0)).slice(-3)
+  : ("???"+(100*e(t)).toFixed(0)).slice(-3)
 }
