@@ -8,7 +8,8 @@ function lg(t) {
  try { o=file(o); p=o.readAll() }
  catch (e) {   
   p =m("DD.MM.YY HH:mm")+" ★BEGIN LOG★ "
-  p+=lib().title
+  p+=lib().title+" "
+  p+=lib()entries().length +"★"
  }
  finally {
   p=m("HH:mm:SS ")+t+"\n"+p
