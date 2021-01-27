@@ -7,9 +7,9 @@ function lg(t) {
  o+="/L-"+m("YYMMDD-HH")+".log"; p ="★"
  try { o=file(o); p=o.readAll() }
  catch (e) {   
-  p =m("DD.MM.YY HH:mm")+" ★BEGIN LOG★ "
-  p+=lib().title+" "
-  p+=lib().entries().length +"★"
+  p =m("DD.MM.YY HH:mm"
+  p+=" ★ LOG ★  Lib:"+lib().title
+  p+=" "lib().entries().length +"#"
  }
  finally {
   p=m("HH:mm:SS ")+t+"\n"+p
@@ -21,5 +21,5 @@ function lg(t) {
 //★★★★
 function tlg(x) {
  if (x==null) x =lib().entries()
- return x.length +"★"+lib().title+"★="
+ return x.length +"★"+lib().title+"★=" //deluje ★
  }
