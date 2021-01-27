@@ -1,4 +1,4 @@
-log(lg( "test 2345"))
+//log(lg( "test 2345"))
 // add comments to c:/docs/MDbLg/★.LOG
 function lg(t) {
  function m(f){return moment().format(f)}
