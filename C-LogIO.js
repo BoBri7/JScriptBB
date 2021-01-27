@@ -21,5 +21,5 @@ function lg(t) {
 //★★★★
 function tlg(x) {
  if (x==null) x =lib().entries()
- return x.length +"★"
+ return x.length +"★"+lib().title+"★="
  }
