@@ -7,7 +7,7 @@ function lg(t) {
  o+="/L-"+m("YYMMDD-HH")+".log"; p ="★"
  try { o=file(o); p=o.readAll() }
  catch (e) {   
-  p =m("DD.MM.YY HH:mm"
+  p =m("DD.MM.YY HH:mm")
   p+=" ★ LOG ★  Lib:"+lib().title
   p+=" "+lib().entries().length +"#"
  }
