@@ -1,8 +1,9 @@
 // Err Handling
-function LgEr(err,txt) { 
-  txt = "Err:"+err.name+""+err.message+"\n >"+txt )
-  // alert (txt) ;log (txt);
-  return txt
+function LgEr(er,t) { 
+  t ="Err:"+er.name+""+er.message
+  t+="\n >L="+er.linenumbe +" "+ t )
+  // alert (t) ;log (t);
+  return t
 }  //★★10
 }
 
