@@ -7,8 +7,11 @@ function LgEr(err,txt) {
 }
 
 /*
-try {  napaka? ) }
+try {  ★ napaka? ★ }
 catch(err) { LgEr(err,"txt") }
-finaly { ...  }
+finaly { ★ close ★  }
+★★ 
+OnError ErrHandler ????? 
+★★
 */
 //★★★★★★★★
