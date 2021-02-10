@@ -1,13 +1,13 @@
-function p(o) {o=o.toLowerCase()
+function pr(o) {o=o.toLowerCase()
  switch (o) {
- case "r" : oo=4142   ;break
- case "s" : oo=17729  ;break
- case "k" : oo=26078  ;break
- case "h" : oo=9139.  ;break
- case "z" : oo=16402  ;break
- default  : oo=9999999
+ case "r" : o=4142   ;break
+ case "s" : o=17729  ;break
+ case "k" : o=26078  ;break
+ case "h" : o=9139.  ;break
+ case "z" : o=16402  ;break
+ default  : o=9999999
  }
- return o+" "+oo }
+ return o }
 //log(p("r")+"\n ★★★★★ \n" )
 
 
