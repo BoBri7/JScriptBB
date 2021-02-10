@@ -3,7 +3,7 @@ function pr(o) {o=o.toLowerCase()
  case "r" : o=4142   ;break
  case "s" : o=17729  ;break
  case "k" : o=26078  ;break
- case "h" : o=9139.  ;break
+ case "h" : o=9139   ;break
  case "z" : o=16402  ;break
  default  : o=9999999
  }
