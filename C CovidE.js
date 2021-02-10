@@ -1,4 +1,18 @@
-//test 
+function p(o) {o=o.toLowerCase()
+ switch (o) {
+ case "r" : oo=4142   ;break
+ case "s" : oo=17729  ;break
+ case "k" : oo=26078  ;break
+ case "h" : oo=9139.  ;break
+ case "z" : oo=16402  ;break
+ default  : oo=9999999
+ }
+ return o+" "+oo }
+//log(p("r")+"\n ★★★★★ \n" )
+
+
+
+
 function f(x){x ="    "+field(o+"."+x)
  return x.slice(-5) }
 /* orig
