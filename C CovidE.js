@@ -11,9 +11,15 @@ function pr(o) {o=o.toLowerCase()
 //log(p("r")+"\n ★★★★★ \n" )
 
 
+function obc(o){
+ i =f("akt") + f("ok") +f("u")
+ i+="\n"
+ i+=f("n")+ f("po2")
+ if(o=="R")i+=f("tnpj")
+ return i 
+}
 
-
-function f(x){x ="    "+field(o+"."+x)
+function f(o,x){x ="    "+field(o+"."+x)
  return x.slice(-5) }
 /* orig
 function f(x){x ="   ____ "+field(o+"."+x)
