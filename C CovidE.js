@@ -9,7 +9,7 @@ function pr(o) {
  return o 
 } 
 function f(o,x,s,n){
- if(n==null)n=8
+ if(n==null)n=11
  if(s==null)s=""
  o =field(o+"."+x) 
  if(isNaN(o)||o==null)o="~ "
@@ -21,10 +21,11 @@ function obcn(o){
  if(!field("F"))return " ~ ~\n ~ ~"
  i =f(o,"potr","ok:")
  i+=("    "+(parseInt(i)*100/pr(o)).toFixed(1)).slice(-5)+"%;"
- i+=f(o,"vsi","vseh\n")
- 
- i+=f(o,"umrl","u,",5)
- i+=f(o,"novi","nov;")+ f(o,"d.po2","°/pd")
+ i+=f(o,"vsi","vseh\n",13)
+
+ i+=f(o,"umrl","u,",8)
+ i+=f(o,"novi","nov;",12)
+ i+=f(o,"d.po2","°/pd",12)
  if(o=="R")i+=f(o,"tnp","/t")
  return i 
 }               
