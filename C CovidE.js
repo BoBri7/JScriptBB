@@ -19,7 +19,7 @@ function f(o,x,s,n){
 }
 function obcn(o){ 
  if(!field("F"))return " ~ ~\n ~ ~"
- i =f(o,"potr","ok=")
+ i =f(o,"potr","ok:")
  i+=("    "+(parseInt(i)*100/pr(o)).toFixed(1)).slice(-5)+"%;"
  i+=f(o,"vsi",";")
  i+="\n"
