@@ -21,7 +21,7 @@ function obcn(o){
  if(!field("F"))return " ~ ~\n ~ ~"
  i =f(o,"potr","ok:")
  i+=("    "+(parseInt(i)*100/pr(o)).toFixed(1)).slice(-5)+"%;"
- i+=f(o,"vsi","vseh\n",13)
+ i+=f(o,"vsi","}\n")
 
  i+=f(o,"umrl","u,",8)
  i+=f(o,"novi","nov;",12)
