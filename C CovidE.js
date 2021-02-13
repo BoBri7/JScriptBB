@@ -14,15 +14,13 @@ function obcn(o){
  i+=f(o,"vsi",";")
  i+=f(o,"umrl",1,5)
  i+="\n"
- i+=f(o,"novi",3)+ f(o,"d.po2","/pd")
+ i+=f(o,"novi",3)
+ i+=f(o,"d.po2","/pd")
  if(o=="R")i+=f(o,"tnp","/t")
-
  return i 
-//+"\n preb="+pr(o) +" "+parseInt(i,10)
 }
-
-function pr(o) {o=o.toLowerCase()
- switch (o) {
+function pr(o) { 
+ switch (o.toLowerCase()) {
  case "r" : o=4142   ;break
  case "s" : o=17729  ;break
  case "k" : o=26078  ;break
@@ -30,8 +28,10 @@ function pr(o) {o=o.toLowerCase()
  case "z" : o=16402  ;break
  default  : o=9999999
  }
- return o }
-*
+ return o 
+}               
+
+/*
  ///log(p("r")+"\n ★★★★★ \n" )
 
 //akt-potr ok-vsi n-novi u-umrl po2-d.po2
