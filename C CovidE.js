@@ -10,7 +10,15 @@ function pr(o) {o=o.toLowerCase()
  return o }
 //log(p("r")+"\n ★★★★★ \n" )
 
-
+//akt-potr ok-vsi n-novi u-umrl po2-d.po2
+function obcn(o){  // ★★★★
+ i =f(o,"potr") + f(o,"vsi") +f(o,"umrl")
+ i+="\n"
+ i+=f(o,"novi")+ f(o,"d.po2")
+ if(o=="R")i+=f(o,"tnpj")
+ return i 
+}
+//★
 function obc(o){
  i =f(o,"akt") + f(o,"ok") +f(o,"u")
  i+="\n"
