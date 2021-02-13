@@ -21,11 +21,10 @@ function obcn(o){
  if(!field("F"))return " ~ ~\n ~ ~"
  i =f(o,"potr","ok:")
  i+=("    "+(parseInt(i)*100/pr(o)).toFixed(1)).slice(-5)+"%;"
- i+=f(o,"vsi","\n")
- //i+="\n"
+ i+=f(o,"vsi","vseh\n")
+ 
  i+=f(o,"umrl","u,",5)
- //i+="\n"
- i+=f(o,"novi",3)+ f(o,"d.po2","/pd")
+ i+=f(o,"novi","nov;")+ f(o,"d.po2","°/pd")
  if(o=="R")i+=f(o,"tnp","/t")
  return i 
 }               
