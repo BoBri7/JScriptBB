@@ -22,10 +22,10 @@ function obcn(o){
  i =f(o,"potr","ok:")
  i+=("   "+(parseInt(i)*100/pr(o)).toFixed(1)).slice(-4)+"%;"
  i+=f(o,"vsi","}\n",12)
- i+=f(o,"novi","n,")        //novi/
+ i+=f(o,"novi","n,",7)        //novi/
  i+=f(o,"umrl","u",8)      // umrli
  
- i+=f(o,"d.po2","d2×",12)    //dni/podvojit
+ i+=f(o,"d.po2","d×",11)    //dni/podvojit
  if(o=="R")i+=f(o,"tnp","°/t") //nov/teden
  return i 
 }               
