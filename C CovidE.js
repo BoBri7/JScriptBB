@@ -34,7 +34,7 @@ function obcn(o){
 // ★★ case / 1000 prebivalcev
 //c="potr;novi;vsi;d.po2".split(";")
 //cpt(c[0])  // 
-function cpt(c,cc) {
+function cpt(c) {
  s =""; o ="RSKHZ".split("")
  for(i=0;i<o.length;i++){
   v=field(o[i]+"."+c)
