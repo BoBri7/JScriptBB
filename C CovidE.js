@@ -1,4 +1,4 @@
-function pr(o) { 
+function pr(o) { // prebivalcev /občinah
  switch (o.toLowerCase()) { 
  case "r" : o= 4142 ;break 
  case "s" : o=17729 ;break
@@ -8,7 +8,7 @@ function pr(o) {
  default  : o=9999999 } 
  return o 
 } 
-function f(o,x,s,n){
+function f(o,x,s,n){ // vrednost polja
  if(n==null)n=9
  if(s==null)s=""
  o =field(o+"."+x) 
@@ -17,7 +17,7 @@ function f(o,x,s,n){
  else o+=s
  return ("     "+o).slice(-n) 
 }
-function obcn(o){ 
+function obcn(o){ izpis cov.# za občino
  if(!field("F"))return " ~ ~\n ~ ~"
  i =f(o,"potr","ok:")
  i+=("   "+(parseInt(i)*100/pr(o)).toFixed(1)).slice(-4)+"%;"
@@ -36,4 +36,4 @@ function obcn(o){
 //★★
 
 
-/★★★★
+//★★★★
