@@ -1,4 +1,5 @@
-function pr(o) { // prebivalcev /občinah
+// ★  // prebivalci /občinah
+function pr(o) {
  switch (o.toLowerCase()) { 
  case "r" : o= 4142 ;break 
  case "s" : o=17729 ;break
@@ -7,8 +8,8 @@ function pr(o) { // prebivalcev /občinah
  case "z" : o=16402 ;break
  default  : o=9999999 } 
  return o 
-} 
-function f(o,x,s,n){ // vrednost polja
+}// ★ // vrednost polja
+function f(o,x,s,n){ 
  if(n==null)n=9
  if(s==null)s=""
  o =field(o+"."+x) 
@@ -17,7 +18,8 @@ function f(o,x,s,n){ // vrednost polja
  else o+=s
  return ("     "+o).slice(-n) 
 }
-function obcn(o){ izpis cov.# za občino
+// ★ izpis cov.# za občino
+function obcn(o){ 
  if(!field("F"))return " ~ ~\n ~ ~"
  i =f(o,"potr","ok:")
  i+=("   "+(parseInt(i)*100/pr(o)).toFixed(1)).slice(-4)+"%;"
@@ -29,11 +31,11 @@ function obcn(o){ izpis cov.# za občino
  if(o=="R")i+=f(o,"tnp","°/t") //nov/teden
  return i 
 }
-// ★★ 
+// ★★ case / 1000 prebivalcev
 //c="potr;novi;vsi;d.po2".split(";")
-//cpt(c[0])  // case / 1000 prebivalcev
+//cpt(c[0])  // 
 
 //★★
 
 
-//★★★★
+//★★★★ E N D ★
