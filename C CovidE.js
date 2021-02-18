@@ -38,8 +38,8 @@ function cpt(c) {
  s =""; o ="RSKHZ".split("")
  for(i=0;i<o.length;i++){
   v=field(o[i]+"."+c)
-  v=(v*1000/pr(o[i])).toFixed(1) 
-  v=v
+  if(c.slice(-1)!="2" ) {
+   v=(v*1000/pr(o[i])).toFixed(1) }
   s+=o[i]+":"+("     "+v).slice(-5)
   s+=(i==2)?"\n ":i<o.length-1?";   ":""
  }
