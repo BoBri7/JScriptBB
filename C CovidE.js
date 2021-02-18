@@ -28,5 +28,23 @@ function obcn(o){
  i+=f(o,"d.po2","d×",11)    //dni/podvojit
  if(o=="R")i+=f(o,"tnp","°/t") //nov/teden
  return i 
-}               
-//★★★★
+}
+// ★★ 
+//c="potr;novi;vsi;d.po2".split(";")
+//cpt(c[0])
+// case / 1000 prebivalcev
+function cpt(c) {
+function f(o,c) { 
+ c=field(o+"."+c)*1000/pr(o)
+ o=o+"="+("     "+c.toFixed(1)).slice(-4)
+return o }
+s =""; o ="RSKHZ"
+for(i=0;i<o.length;i++){
+ s+=f(o[i],c)
+ s+=(i==2)?"\n ":";     "
+}
+return s }
+//★★
+
+
+/★★★★
