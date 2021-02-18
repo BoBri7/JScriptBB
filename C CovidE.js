@@ -42,7 +42,7 @@ function cpt(c,cc) {
    v=(v*1000/pr(o[i])).toFixed(1) }
   s+=o[i]+":"+("     "+v).slice(-5)
   s+=(i==2)?"\n ":i<o.length-1?";   ":" "
- }if (cc!null) s+=c
+ }if (cc!=null) s+=c
 return s 
 }
 //★★
