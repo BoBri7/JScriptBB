@@ -29,7 +29,8 @@ function obcn(o){
  
  //i+=f(o,"d.po2","d×",11)    //dni/podvojit
  //if(o=="R")i+=f(o,"tnp","°/t") //nov/teden
- i+=R(o)
+ r=R(o)
+ i+=f(r.toFixed(r>9?0:1),"R*","★",11)
  return i 
 }
 // ★★ case / 1000 prebivalcev
