@@ -25,15 +25,15 @@ function obcn(o){
  i+=("   "+(parseInt(i)*100/pr(o)).toFixed(1)).slice(-4)+"%;"
  i+=f(o,"vsi","}\n",12)
  i+=f(o,"novi","n,",7)        //novi/
- i+=f(o,"umrl","u",8)      // umrli
+ i+=f(o,"umrl","u",8)         // umrli
  
  //i+=f(o,"d.po2","d×",11)    //dni/podvojit
  //if(o=="R")i+=f(o,"tnp","°/t") //nov/teden
- r=R(o)
+ //r=R(o)
  //i+=f(r.toFixed(r>9?0:1),"R*")
- i+="   R*"+r.toFixed(r>9?0:1)
- 
- return i 
+ //i+="   R*"+r.toFixed(r>9?0:1)
+
+ return i +" R*"
 }
 // ★★ case / 1000 prebivalcev
 //c="potr;novi;vsi;d.po2".split(";")
