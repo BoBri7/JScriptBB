@@ -21,11 +21,14 @@ function f(o,x,s,n){
 // ★ izpis cov.# za občino
 function obcn(o){ 
  if(!field("F"))return " ~ ~\n ~ ~"
- i =f(o,"potr","ok:")
+ var i =f(o,"potr","ok:")
  i+=("   "+(parseInt(i)*100/pr(o)).toFixed(1)).slice(-4)+"%;"
- i+=f(o,"vsi","}  /stp=") 
- i+=((field(o+".vsi")/pr(o)).toFixed(0)
- i+="\n")
+ 
+ i+=f(o,"vsi","}") 
+ var t=field(o+".vsi")
+ if(!(isNaN(o)||o==null)) {
+  i+="" /stp="+ (t/pr(o)).toFixed(0) }
+ i+="\n"
  
  i+=f(o,"novi","n,",7)        //novi/
  i+=f(o,"umrl","u",8)         // umrli
@@ -35,7 +38,7 @@ function obcn(o){
  r=R(o)
  i+=("       R*"+(r.toFixed(r>9?0:1)).slice(-9)
  
- return i +" R*"
+ return i // +" R*"
 }
 // ★★ case / 1000 prebivalcev
 //c="potr;novi;vsi;d.po2".split(";")
@@ -66,11 +69,11 @@ function R(o){
  }  return avg([r(o,0),r(o,1)])
 }
 function avg(a){var l=a.length,s=0,j=0
+ if(l==0)return "~"
  for(i=0;i<l;i++){ai=a[i]
   if(!(isNaN(ai)||ai==null)){j++;s+=ai}
  } return s/j 
 }
-//R("R").toFixed(1)
 //★★
 
 
