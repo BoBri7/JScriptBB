@@ -27,8 +27,9 @@ function obcn(o){
  i+=f(o,"novi","n,",7)        //novi/
  i+=f(o,"umrl","u",8)      // umrli
  
- i+=f(o,"d.po2","d×",11)    //dni/podvojit
- if(o=="R")i+=f(o,"tnp","°/t") //nov/teden
+ //i+=f(o,"d.po2","d×",11)    //dni/podvojit
+ //if(o=="R")i+=f(o,"tnp","°/t") //nov/teden
+ i+=R(o)
  return i 
 }
 // ★★ case / 1000 prebivalcev
@@ -45,6 +46,26 @@ function cpt(c) {
  }
 return s 
 }
+function R(o){ 
+ function r(o,n){
+  var p="d.po2;tpnp".split(";")
+  v=field( o+"."+p[n])
+  o="d%"[n]
+  if(v==null) { return null }
+  switch (n) {
+  case 0:v=-50*Math.log(v)+280+0.1*v
+     break
+  case 1:v= 90*Math.exp(0.013*v)+10
+     break
+  } return v
+ }  return avg([r(o,0),r(o,1)])
+}
+function avg(a){var l=a.length,s=0,j=0
+ for(i=0;i<l;i++){ai=a[i]
+  if(!(isNaN(ai)||ai==null)){j++;s+=ai}
+ } return s/j 
+}
+//R("R").toFixed(1)
 //★★
 
 
