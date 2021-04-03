@@ -35,10 +35,10 @@ function obcn(o){
  
  //i+=f(o,"d.po2","d×",11)    //dni/podvojit
  //if(o=="R")i+=f(o,"tnp","°/t") //nov/teden
- r=R(o)
- i+=("       R*"+(r.toFixed(r>9?0:1)).slice(-9)
  
- return i // +" R*"
+ i+=("       R*"+R(o).slice(-9)
+ 
+ return i 
 }
 // ★★ case / 1000 prebivalcev
 //c="potr;novi;vsi;d.po2".split(";")
@@ -66,13 +66,15 @@ function R(o){
   case 1:v= 90*Math.exp(0.013*v)+10
      break
   } return v
- }  return avg([r(o,0),r(o,1)])
+ }  o= avg([r(o,0),r(o,1)])
+ if(o=="0") return "~ "
+ else return o.toFixed(r>9?0:1))
 }
 function avg(a){var l=a.length,s=0,j=0
- if(l==0)return "~"
+ //if(l==0)return "~"
  for(i=0;i<l;i++){ai=a[i]
   if(!(isNaN(ai)||ai==null)){j++;s+=ai}
- } return s/j 
+ } return j==0?"0":s/j 
 }
 //★★
 
