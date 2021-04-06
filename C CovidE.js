@@ -20,7 +20,7 @@ function F(o,x) { return field(o+"."+x)
 }
 function p(o,x,f) { if(f==null)f=1
  x=x*f/pr(o)
- return x.toFixed(x>9?0:1)
+ return Number(x.toFixed(x>9?0:1))
 }//★ 23
 function obcn(o){//★ izp.cov.#/občino
  if(!field("F"))return " ~ ~\n ~ ~"
