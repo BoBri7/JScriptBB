@@ -41,13 +41,16 @@ function obcn(o){//★ izp.cov.#/občino
  return i 
 }//★40
 function cpt(c) { //★ sum 
- C="potr;novi;vsi;d.po2".split(";")
+ C="potr;novi;vsi;umrl;d.po2;R".split(";")
  if(c==null) return C;
  var s ="", o ="RSKHZ".split("")
  for(i=0;i<o.length;i++){
- v=field(o[i]+"."+C[c])
+ if(C[c]=="R") v=R(o[i])
+ else { v=field(o[i]+"."+C[c])
  if(C[c].slice(-1)!="2" ) {
-  v=(v*1000/pr(o[i])).toFixed(1) }
+  v=(v*1000/pr(o[i])) }
+ }
+ v=v.toFixed(v>9?0:1)
  s+=o[i]+":"+("★ "+v).slice(-5)
  s+=(i==2)?"\n ":i<o.length-1?"; ":" "
  } return s +" "+C[c]
@@ -67,7 +70,7 @@ function R(o){
  }
  o= avg([r(o,0),r(o,1)])
  if(o=="0") return "~ "
- else return o.toFixed(o>9?0:1)
+ else return Number(o.toFixed(o>9?0:1))
 }//★16★68
 function avg(a){var l=a.length,s=0,j=0 
  //if(l==0)return "~"
