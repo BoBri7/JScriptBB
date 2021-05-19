@@ -23,4 +23,11 @@ function lg(t) {
 function tlg(x) {
  if (x==null) x =lib().entries()
  return x.length +"★"+lib().title+"★=" //deluje ★
- }
+}
+//★★★★
+function msg(txt,Lgx){
+ message(txt)
+ if(Lgx==1) lg(txt)
+}
+//★★★★
+//★★★★
