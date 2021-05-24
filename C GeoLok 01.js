@@ -1,4 +1,20 @@
-// fieldValue(fn)
+function GeoL(){var h="Funkcije GeoLok()",l="\n"
+ h+=l+" ★ fields:"
+ h+=l+"fv(fn)      ★ fieldValue(fn)"
+ h+=l+"af(fn,|i)   ★ arayField(fn,|i) > a/a[i]"
+ h+=l+" ★ math & format"
+ h+=l+"df(a:b,b)   ★ defaultValue(a:b)"
+ h+=l+"q2(n)       ★ kv.koren(#)"
+ h+=l+"n2(n)       ★ kvadrat(#)"
+ h+=l+"fN(n,x,d:2) ★ numFormat tisoč (# dec:2 n#)"
+ h+=l+"N(n,d:2)    ★ numToFixed(#,dec)"
+ h+=l+" ★ array"
+ h+=l+"ai(a,i:2)    ★ arayEl(A,#)"
+ h+=l+"dif(a,b,#:2) ★ diffArr.ENH!(a,b,e#) "
+ h+=l+"r(a,b)!ENH   ★ sum.sqw*(dE*,) > [r,R]"
+ //*/
+ return h
+}// fieldValue(fn)
 function fv(fn){return field(fn)}    
 // defaultValue(a:b)
 function df(a,b){return a==null?b:a} 
@@ -6,8 +22,8 @@ function df(a,b){return a==null?b:a}
 function q2(x){return Math.sqrt(x)}  
 //kvadrat(#)
 function n2(x){return x*x}
-// numFormat tisoč (# dec:2 n#)
-function fN(n,d,x) { d=df(d,2)
+// numFormat tisoč (# length dec:2)
+function fN(n,x,d) { d=df(d,2)
  n=df(n,0).toFixed(df(d,2)).split('.');d=d>0?","+n[1]:""
  n=n[0].replace(/\B(?=(\d{3})+(?!\d))/g,".")+d
  if(x>n.length)n=(" ".repeat(x)+n).slice(-x)
