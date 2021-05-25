@@ -1,4 +1,8 @@
+function gv(x){
+ return x==null?"v: 2105.25:12":GeoL()
+}
 function GeoL(){var h="Funkcije GeoLok()",l="\n"
+ h+=l+gv()
  h+=l+" ★ fields:"
  h+=l+"fv(fn)      ★ fieldValue(fn)"
  h+=l+"af(fn,|i)   ★ arayField(fn,|i) > a/a[i]"
