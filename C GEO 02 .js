@@ -30,7 +30,7 @@ function fN(n,x,d) { d=df(d,2)
 }
 
 h+=l+"N(n,d:2)    ★ numToFixed(#,dec)"
-function N(x,d){d=df(n,2)
+function N(x,d){d=df(d,2)
  return Number(x.toFixed(df(d,2)))
 }
 
