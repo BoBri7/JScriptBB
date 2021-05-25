@@ -30,7 +30,7 @@ function fN(n,x,d) { d=df(d,2)
 }
 
 h+=l+"N(n,d:2)    ★ numToFixed(#,dec)"
-function N(x,d){d=df(d,2)
+function N(x,d){
  return Number(x.toFixed(df(d,2)))
 }
 
@@ -46,14 +46,14 @@ function dif(a,b,i){if(i==null)i=2
 
 h+=l+" ★★ GEO distanca azimut"
 h+=l+"r(a,b)!ENH   ★ sum.sqw*(dE*,dN*) > [r,R]"
-function r(a,b){var h=dif(a,b,2)
- a=n2(dif(a,b,0))+n2(dif(a,b,1))
- return [N(q2(a)),N(q2(a+n2(h)))]
+function r(a,b){var h=dif(a,b,2) 
+ a=n2(dif(a,b,0))+n2(dif(a,b,1)) 
+ return [N(q2(a)),N(q2(a+n2(isNaN(h)?0:h)))]
 }
 
 h+=l+"az(a,b)      ★ d.ENH > [az, ah]"
 function az(a,b){
- return fe(a)
+ return fe(a)+"  ★!★"
 }
 h+=l+"L2ENH        ★ Locus+H > ENH"
 function L2ENH(x,h){
@@ -67,5 +67,7 @@ function L2ENH(x,h){
 //★★★ END
 h+=l+" ★★★ end help  ★★★ "
 
-function gh(x){return x!=null?h:"ver:105'25•17"}
+function gh(x){return x!=null?h:"ver:105'25•18"}
+
 //Tue, 25 May 2021 12:53:17  
+// https://github.com/BoBri7/JScriptBB
