@@ -57,5 +57,5 @@ function az(a,b){
 }
 h+=l+" ★★★ end help  ★★★ "
 
-function gh(x){return x!=null?h:"ver:105'25•13")
+function gh(x){return x!=null?h:"ver:105'25•13"}
 //Tue, 25 May 2021 12:53:17  
