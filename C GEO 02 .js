@@ -55,6 +55,16 @@ h+=l+"az(a,b)      ★ d.ENH > [az, ah]"
 function az(a,b){
  return fe(a)
 }
+h+=l+"L2ENH        ★ Locus+H > ENH"
+function L2ENH(x,h){
+ function isEr(x){return x==null || isNaN(x)}
+ fv(x)==null?x="★ vnesi "+x+" ★"
+            :x=(fv(x).split(" ")).slice(1,3)
+ isEr(fv(h))?x.push("★ vnesi višino★")
+            :x.push(field(h))
+ return x 
+}
+//★★★ END
 h+=l+" ★★★ end help  ★★★ "
 
 function gh(x){return x!=null?h:"ver:105'25•13"}
