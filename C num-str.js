@@ -66,7 +66,7 @@ function tf(n,d)   {return n.toFixed(d);}
 function f(x,l)    {return (" ".repeat(l)+x).slice(-l)}
 function fn(x,d)   {return x.toFixed(d)}  //=> round ★★★
 function round(x,d){return x.toFixed(d)}  //=> 
-function fp(n)     { n==null? return "" : if (n>=0) n="+"+n;  return n }
+function fp1(n)     { n==null? return "" : if (n>=0) n="+"+n;  return n }
 function fp(n)     { if(n==null) n=""; if(n!="" && n>=0) n="+"+n
                     return n } // ★★ isNan ★★
 function sign(x)   { return x>0?1:x<0?-1:0 } 
