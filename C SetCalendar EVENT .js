@@ -1,12 +1,13 @@
-function I2K(Ti,Ds,Bt,Dh) { Bt=moment(Bt)
+function I2K(Ti,Ds,Bt,Dh,Dm) { Bt=moment(Bt)
   if (Ti==null){ 
     Ds ="★★ Set Kalendar EVENT \n"
     Ds+=" Title,  \n"
     Ds+=" Description,  \n"
     Ds+=" BeginDateTime  \n"
     Ds+=" DurationHours \n" 
+    Dm+=" DurationMin's \n" 
     return Ds ; exit }
-  i=intent("android.intent.action.INSERT"); 
+  var i=intent("android.intent.action.INSERT"); 
   // Create Intent object 
   i.data("content://com.android.calendar/events"); 
   // Data contains Google Calendar URI 
@@ -19,7 +20,7 @@ function I2K(Ti,Ds,Bt,Dh) { Bt=moment(Bt)
   // Get start time from field Begin 
   // Begin is of type DateTime parameter is of type Long, 
   // so extraLong() is used for conversion.
-  i.extraLong("endTime", Bt+Dh*3600000 )
+  i.extraLong("endTime",Bt+Dh*3600000+Dm*60000)
   //i.extraLong("endTime", entry().field("End").getTime())
   // Requires same conversion as above 
   // i.extra("o?", d ); //obvestilo ★ [ 1 ur, 2 ur,1 dan ]
