@@ -26,9 +26,9 @@ function df(d,df){var F=""
   case "Y":F+=f("YY");break
   case "w":F+=f("w") ;break
   case "W":F+=f("WW");break
-  case "n":F+=f("");break //minute
+  case "n":F+=f("mm");break //minute
   case "s":F+=f("ss");break
-  case "S":F+=f("SSS");break
+  case "S":F+=f("SSS");break //miliSec
   default:F+=fi
  }}
  return F
