@@ -14,7 +14,7 @@ function df(dx,df){
   case "3":F+=dw(dx,3);break
   case "4":F+=dw(dx)  ;break
   case "5":F+=dm(dx,3);break
-  case "6":F+=f("d") ;break //=dow
+  case "6":F+=f("d")  ;break //=dow
   case "7":F+=dw(dx,2)+f(" d.m.Y");break
   case "8":F+=dw(dx,3)+f(" D.")+dm(dx,3)+f(" YY");break
   case "9":F+=f("HH:mm");break
@@ -22,8 +22,8 @@ function df(dx,df){
   case "D":F+=f("DD");break
   case "m":F+=f("M") ;break
   case "M":F+=f("MM");break
-  case "y":F+=f("YY") ;break
-  case "Y":F+=f("Y");break
+  case "y":F+=f("YY");break
+  case "Y":F+=f("Y") ;break
   case "w":F+=f("w") ;break
   case "W":F+=f("WW");break
   case "h":F+=f("h") ;break
@@ -31,12 +31,19 @@ function df(dx,df){
   case "n":F+=f("mm");break //minute
   case "s":F+=f("ss");break
   case "S":F+=f("SSS");break //miliSec
+  case "x":F+=doy(dx) ;break
   default:F+=fi
  }}
  return F
 }
-function dw(d,f){
- d=moment(d).format("d")
+function doy(dx){dx=moment(dx)
+ return dx.diff(new Date(dx.format("Y"),0,0),"day")
+}
+function boy(dx){return new Date(dx.format("Y"),0,1)}
+function boy(dx){return new Date(moment(dx).startOf("Year"))}
+function bod(dx){return new Date(moment(dx).startOf("day"))}
+function dw(dx,df){
+ dx=moment(dx).format("d")
  var w=".ponedeljek.torek.sreda."
  w+="četrtek.petek."
  w+="sobota.nedelja"
