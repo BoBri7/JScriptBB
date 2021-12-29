@@ -1,4 +1,5 @@
 // DateFormat(d,fstring)
+function m(x){return moment(x)}
 function df(d,df){
  function f(x){return d.format(x)}
  if(df==null)df=0
@@ -13,8 +14,8 @@ function df(d,df){
   case "3":F+=dw(d,3);break
   case "4":F+=dw(d)  ;break
   case "5":F+=dm(d,3);break
-  case "6":F+=dm(d)  ;break
-  case "7":F+=dm(d)  ;break
+  case "6":F+=dm(d)  ;break //<
+  case "7":F+=dm(d)  ;break //<
   case "8":F+=dw(d,3)
              +f(" D.")
              +dm(d,3)
