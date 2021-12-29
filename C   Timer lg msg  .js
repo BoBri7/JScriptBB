@@ -6,7 +6,7 @@ function T(tx){
  function m(){return moment()}
  return tx==null
   ?m()//.add(-22,"milisec")
-  :"Diff msec:"+m().diff(tx,"milisec")
+  :m().diff(tx,"milisec")
 } 
 function lg(xx){var tt=moment()
  tt=tt.format("★H:mm:ss.SSS")
