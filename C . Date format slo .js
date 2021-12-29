@@ -1,22 +1,22 @@
 // DateFormat(d,fstring)
 function m(x){return moment(x)}
-function df(d,df){var F=""
- function f(x){return d.format(x)}
+function df(dx,df){
+ function f(xx){return dx.format(xx)}
  if(df==null)df=0
  df=String(df)
- d=moment(d); var F=""
+ dx=moment(dx); var F=""
  for(var ii=0;ii<df.length;ii++){
   var fi=df.charAt(ii)
   switch (fi){
   case "0":F+=f("DD.MM.YY");break
   case "1":F+=f("D.M.YY")  ;break
-  case "2":F+=dw(d,2);break
-  case "3":F+=dw(d,3);break
-  case "4":F+=dw(d)  ;break
-  case "5":F+=dm(d,3);break
-  case "6":F+=f("d") ;break //<
-  case "7":F+=dw(d,2)+f(" d.m.Y");break
-  case "8":F+=dw(d,3)+f(" D.")+dm(d,3)+f(" YY");break
+  case "2":F+=dw(dx,2);break
+  case "3":F+=dw(dx,3);break
+  case "4":F+=dw(dx)  ;break
+  case "5":F+=dm(dx,3);break
+  case "6":F+=f("d") ;break //=dow
+  case "7":F+=dw(dx,2)+f(" d.m.Y");break
+  case "8":F+=dw(dx,3)+f(" D.")+dm(dx,3)+f(" YY");break
   case "9":F+=f("HH:mm");break
   case "d":F+=f("D") ;break
   case "D":F+=f("DD");break
@@ -45,20 +45,20 @@ function dw(d,f){
   ?w
   :w.slice(0,f)
 }
-function dm(d,f){
- d=moment(d).format("M")
+function dm(dx,df){
+ dx=moment(dx).format("M")
  var m=".januar.februar.marec"
  m+=".april.maj.junij.julij"
  m+=".avgust.september"
  m+=".oktober.november.december"
- m=m.split(".")[d]//.format("M")] 
+ m=m.split(".")[dx]//.format("M")] 
  return f==null
   ?m
   :m.slice(0,f)
 }
-function u1(s){
- s=s.slice(0,1).toUpperCase()+s.slice(1)
- return s
+function u1(sx){
+ sx=sx.slice(0,1).toUpperCase()+sx.slice(1)
+ return sx
 }
 /*
 function u1r(s){ 
