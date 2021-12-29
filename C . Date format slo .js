@@ -60,7 +60,9 @@ function u1(s){
 }
 /*
 function u1r(s){ 
- return s.replace(/^(\w)(.+)/, (match, p1, p2) => p1.toUpperCase() + p2.toLowerCase()) 
+ return s.replace(/^(\w)(.+)/,
+ (match,p1,p2)=>p1.toUpperCase() 
+ +p2.toLowerCase()) 
 }
 */
 //=====
