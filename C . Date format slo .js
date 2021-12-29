@@ -57,7 +57,8 @@ function dm(d,f){
 function u1(s){
  s=s.slice(0,1).toUpperCase()+s.slice(1)
  return s
-/function u1r(s){ 
+/*
+function u1r(s){ 
  return s.replace(/^(\w)(.+)/, (match, p1, p2) => p1.toUpperCase() + p2.toLowerCase()) 
 }
 */
