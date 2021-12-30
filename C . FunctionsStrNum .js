@@ -10,4 +10,4 @@ function mx(a,b){//= maximum
 function mn(a,b){//= minimum
  return Math.min(a,b)
 }
-*/
+//== end ==
