@@ -1,6 +1,6 @@
 // DateFormat(d,fstring)
 function h(){var r=" DateFormat"
- r+="'\nm(x){moment(x)"
+ r+="\nm(x){moment(x)"
  r+="\ndf(d,f){" 
  r+="\n 0=DD.MM.YY 1=D.M.YY"
  r+="\n 2=dd 3=ddd 4 ddd"
@@ -8,7 +8,7 @@ function h(){var r=" DateFormat"
  r+="\n 6=dow "
  r+="\n 7=dd D.M.YY 8= ddd DD.MM.YY" 
  r+="\n 9=HH:mm"
- r+="\n dD mM yY wW hH n sS x=doy"  
+ r+="\n dD mM yY wW hH n s.S x=doy"  
  r+="\ndm{ dw{ slo dnevi meseci"
  r+="\ndoy(y){  boy(d){  bod(d){ "
  r+="\nu1(x){1st uCase"  
@@ -46,6 +46,7 @@ function df(dx,df){
   case "n":F+=f("mm");break //minute
   case "s":F+=f("ss");break
   case "S":F+=f("SSS");break //miliSec
+  case "N":F+=f("ss.SSS");break //s.msc
   case "x":F+=doy(dx) ;break
   default:F+=fi
  }}
