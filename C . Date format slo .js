@@ -1,7 +1,7 @@
 // DateFormat(d,fstring)
 function h(){var r=" DateFormat"
  r+="'\nm(x){moment(x)"
- r+="/ndf(d,f){" 
+ r+="\ndf(d,f){" 
  r+="\n 0=DD.MM.YY 1=D.M.YY"
  r+="\n 2=dd 3=ddd 4 ddd"
  r+="\n 5=MM ?x6=MMM"
