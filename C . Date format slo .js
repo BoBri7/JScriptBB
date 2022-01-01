@@ -9,7 +9,8 @@ function h(){var r=" DateFormat"
  r+="\n 7=dd D.M.YY 8= ddd DD.MM.YY" 
  r+="\n 9=HH:mm"
  r+="\n dD mM yY wW hH n sS x=doy"  
- r+="\ndoy(y)  boy(d)  bod(d) dm dw"
+ r+="\ndm{ dw{ slo dnevi meseci"
+ r+="\ndoy(y){  boy(d){  bod(d){ "
  r+="\nu1(x){1st uCase"  
  return r
 }            
