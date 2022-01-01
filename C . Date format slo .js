@@ -62,7 +62,7 @@ function dw(dx,df){
  w+="četrtek.petek."
  w+="sobota.nedelja"
  w=w.split(".")[d]
- return f==null
+ return df==null
   ?w
   :w.slice(0,f)
 }
@@ -73,7 +73,7 @@ function dm(dx,df){
  m+=".avgust.september"
  m+=".oktober.november.december"
  m=m.split(".")[dx]//.format("M")] 
- return f==null
+ return df==null
   ?m
   :m.slice(0,f)
 }
