@@ -1,4 +1,18 @@
 // DateFormat(d,fstring)
+function h(){var r=" DateFormat"
+ r+="m(x){moment(x)"
+ r+="df(d,f){" 
+ r+=" 0=DD.MM.YY 1=D.M.YY"
+ r+=" 2=dd 3=ddd 4 ddd"
+ r+=" 5=MM ?x6=MMM"
+ r+=" 6=dow "
+ r+=" 7=dd D.M.YY 8= ddd DD.MM.YY" 
+ r+=" 9=HH:mm"
+ r+=" dD mM yY wW hH n sS x=doy"  
+ r+="doy(y)  boy(d)  bod(d) dm dw 
+ r+="u1(x){1st uCase"  
+ return r
+}            
 function m(x){return moment(x)}
 function df(dx,df){
  function f(xx){return dx.format(xx)}
