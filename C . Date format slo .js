@@ -62,10 +62,10 @@ function dw(dx,df){
  var w=".ponedeljek.torek.sreda."
  w+="četrtek.petek."
  w+="sobota.nedelja"
- w=w.split(".")[d]
+ w=w.split(".")[dx]
  return df==null
   ?w
-  :w.slice(0,f)
+  :w.slice(0,df)
 }
 function dm(dx,df){
  dx=moment(dx).format("M")
@@ -76,7 +76,7 @@ function dm(dx,df){
  m=m.split(".")[dx]//.format("M")] 
  return df==null
   ?m
-  :m.slice(0,f)
+  :m.slice(0,df)
 }
 function u1(sx){
  sx=sx.slice(0,1).toUpperCase()+sx.slice(1)
