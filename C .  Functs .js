@@ -1,5 +1,12 @@
 
 //= splošne $# f
+function h(){var r="Functions"
+ r+=" sl(x,z,n){ slice"
+ r+=" ps(s,n){   pad -l/+r" 
+ r+=" mx(a,b){ max"
+ r+=" mn(a,b){ min"           
+ return r
+}             
 function sl(x,z,n){ //= slice
  if(n==null)return x.slice(z)
  return x.slice(z,z+n)
