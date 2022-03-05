@@ -12,6 +12,6 @@ function fd(x,df){x=field(x)
 }
 function pr(x){
  var e=entry().prev()
- return e==null?"~":e.firld(x)
+ return e==null?"~":e.field(x)
 }
 //== end ==
