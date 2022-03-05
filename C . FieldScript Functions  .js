@@ -10,5 +10,8 @@ function fd(x,df){x=field(x)
  return x!=null?x:df!=null?df:"~"
   //"99999"
 }
-
+function pr(x){
+ var e=entry().prev()
+ return e==null?"~":e.firld(x)
+}
 //== end ==
