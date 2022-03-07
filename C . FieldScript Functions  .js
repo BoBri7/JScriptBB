@@ -43,4 +43,15 @@ function I(x){var s=">"
  } //>10
  return s
 }
+function V(x,a,f){var f=" ".repeat(22), s=""
+ x=x.split(";") 
+ for(var i=0;i<x.length;i++){var v="",xi=x[i].split(",")
+  s+=xi[0]
+  if(xi.length>1){ xi1=xi[1].trim()+"."+a
+   v=(f>0 ?pr(xi1) :field(xi1))
+   s+=": "+(f+v).slice(-xi[1].length)  
+  }s+=i<x.length-1?"\n":""
+ }
+ return s
+} 
 //== end ==
