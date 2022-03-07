@@ -31,5 +31,16 @@ function v(x,a,f){x=x.split("|")
   s+=si.slice(-xi.length)+d
  }return s
 }
-
+function I(x){var s=">"
+ x=x.split("|")
+ for(var i=0;i<x.length;i++){
+  xi=x[i]
+  fi=field(xi.trim())
+  ti=(typeof(fi)).slice(0,1)
+  fi=ti!="b"?fi:(fi?"Yes":"NO")
+  fi=" ".repeat(22)+fi
+  s+=fi.slice(-xi.length+1)+d
+ } //>10
+ return s
+}
 //== end ==
