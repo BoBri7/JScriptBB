@@ -39,7 +39,7 @@ function I(x){var s=">"
   ti=(typeof(fi)).slice(0,1)
   fi=ti!="b"?fi:(fi?"Yes":"NO")
   fi=" ".repeat(22)+fi
-  s+=fi.slice(-xi.length+1)+d
+  s+=fi.slice(-xi.length)+d
  } //>10
  return s
 }
