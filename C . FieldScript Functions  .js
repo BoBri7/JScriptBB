@@ -20,7 +20,7 @@ function sj(x,d){
  x=x.split(d==null?" ":d)
  return d+x.join(d)+d
 }
-function v(x,a,f){x=x.split(" ")
+function v(x,a,f){x=x.split("|")
  var s=">"
  for(var i=0;i<x.length;i++){
   var xi=x[i].trim()+"."+a
