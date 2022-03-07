@@ -28,7 +28,7 @@ function v(x,a,f){x=x.split("|")
   si+=(f>0
          ?pr(xi)
          :field(xi))
-  s+=si.slice(-xi.length)+d
+  s+=si.slice(-x[i].length)+d
  }return s
 }
 function I(x){var s=">"
