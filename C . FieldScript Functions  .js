@@ -20,7 +20,8 @@ function sj(x,d){
  x=x.split(d==null?" ":d)
  return d+x.join(d)+d
 }
-function v(x,a,f){x=x.split("|")
+function v(x,a,f){
+ x=x.split("|")
  var s=">"
  for(var i=0;i<x.length;i++){
   var xi=x[i].trim()+"."+a
@@ -43,7 +44,8 @@ function I(x){var s=">"
  } //>10
  return s
 }
-function V(x,a,f,k){var f=" ".repeat(22), s=""
+function V(x,a,f,k){
+ var f=" ".repeat(22), s=""
  x=x.split(";") 
  for(var i=0;i<x.length;i++){
   var v="",xi=x[i].split(",")
@@ -52,7 +54,8 @@ function V(x,a,f,k){var f=" ".repeat(22), s=""
   if(xi.length>1){ xi1=xi[1].trim()+"."+a
    v=(f>0 ?pr(xi1) :field(xi1))
    s+=": "+(f+v).slice(ki-xi[1].length)  
-  }s+=i<x.length-1?"\n":""
+  }
+  s+=i<x.length-1?"\n":""
  }
  return s
 } 
