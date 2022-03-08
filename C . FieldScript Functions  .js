@@ -44,7 +44,7 @@ function I(x){var s=">"
  } //>10
  return s
 }
-function Vxx(x,a,f,d,k){
+function V(x,a,f,d,k){
  var f=" ".repeat(22), s=""
  x=x.split(";") 
  for(var i=0;i<x.length;i++){
@@ -60,7 +60,7 @@ function Vxx(x,a,f,d,k){
  return s
 } 
 
-function V(x,a,f,d,k){
+function pr_v(x,a,f,d,k){
  //if(k==null)k=0
  //k=Number(k)
  var p=" ".repeat(33),s=""
@@ -69,7 +69,8 @@ function V(x,a,f,d,k){
   var v="",xi=x[i].split(",")
   var ki=(xi.length>2
     ?xi[2]
-    :Number(k))
+    :k)
+  if(isNaN(ki))ki=0
   s+=xi[0]
   if(xi.length>1){
   xi1=xi[1].trim()+(a>" "?"."+a:"")
@@ -86,6 +87,3 @@ function V(x,a,f,d,k){
  s+=i<x.length-1?"\n":"" 
 } return s
 } 
-
-
-//== end ==
