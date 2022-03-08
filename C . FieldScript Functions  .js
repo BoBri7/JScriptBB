@@ -44,7 +44,7 @@ function I(x){var s=">"
  } //>10
  return s
 }
-function V(x,a,f,k){
+function Vxx(x,a,f,d,k){
  var f=" ".repeat(22), s=""
  x=x.split(";") 
  for(var i=0;i<x.length;i++){
@@ -59,4 +59,33 @@ function V(x,a,f,k){
  }
  return s
 } 
+
+function V(x,a,f,d,k){
+ //if(k==null)k=0
+ //k=Number(k)
+ var p=" ".repeat(33),s=""
+ x=x.split(";")
+ for(var i=0;i<x.length;i++){
+  var v="",xi=x[i].split(",")
+  var ki=(xi.length>2
+    ?xi[2]
+    :Number(k))
+  s+=xi[0]
+  if(xi.length>1){
+  xi1=xi[1].trim()+(a>" "?"."+a:"")
+  v=(f>0
+   ?pr(xi1)
+   :field(xi1)
+  )
+  t=(typeof(v)).slice(0,1)
+  v=t!="b"?v:(v?"Yes":"NO")
+  s+=(d!=null?d:":")+""
+  s+=(p+v).slice(ki-xi[1].length)
+//s+=" "+ki
+ }
+ s+=i<x.length-1?"\n":"" 
+} return s
+} 
+
+
 //== end ==
