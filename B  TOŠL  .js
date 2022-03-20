@@ -11,7 +11,7 @@ function V(e,y,n){
 //izpis SEZNAMA
 function S(x,n){x=field(x);
  if(x.length==0)return ""
- var s="spec:"+" ".repeat(n-4)
+ var s="\nSpec:"+" ".repeat(n-4)
  for(i=0;i<x.length;i++){fi=x[i]
   s+="\n "
   s+=fi.checked?"[×] ":"[ ] " //"✔"
