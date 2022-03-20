@@ -9,9 +9,9 @@ function V(e,y,n){
  return (f("VOID",e)?y:n)
 }
 //izpis SEZNAMA
-function S(x){x=field(x);
+function S(x,n){x=field(x);
  if(x.length==0)return ""
- var s="spec: "
+ var s="spec:"+" ".repeat(n-4)
  for(i=0;i<x.length;i++){fi=x[i]
   s+="\n "
   s+=fi.checked?"[×] ":"[ ] " //"✔"
