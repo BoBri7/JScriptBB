@@ -19,6 +19,14 @@ function S(x,n){x=field(x);
  } return s
 }
 
+function I(x,n){var c=n>0; n=Math.abs(n)
+ var s=" ".repeat(n)
+ var p= x.length>n?"•":"."
+ return (c
+  ?(x+s).slice(0,n)+p
+  :p+(s+x).slice(-n))
+}
+
 /*xxxxxx
 function Vx(e,x){if(typeof(e)=="string"){x=e;e=entry()}
  return (f("VOID",e)
