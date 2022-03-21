@@ -26,6 +26,12 @@ function I(x,n){var c=n>0; n=Math.abs(n)
   ?(x+s).slice(0,n)+p
   :p+(s+x).slice(-n))
 }
+function F(t,x){ x=field(x)
+ return (x==""
+   ?""
+   :"\n"+t+"="+I(x,n-t.length)
+}
+
 
 /*xxxxxx
 function Vx(e,x){if(typeof(e)=="string"){x=e;e=entry()}
