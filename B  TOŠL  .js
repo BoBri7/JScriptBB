@@ -15,7 +15,7 @@ function S(x,n){x=field(x);
  for(i=0;i<x.length;i++){fi=x[i]
   s+="\n "
   s+=fi.checked?"[×] ":"[ ] " //"✔"
-  s+=String(fi)
+  s+=I(String(fi),n)
  } return s
 }
 
@@ -27,20 +27,11 @@ function I(x,n){
   ?(x+s).slice(0,n)+p
   :p+(s+x).slice(-n))
 }
+
 function F(t,x){ x=field(x) 
  return x==""
   ?""
   :"\n"+t+":"+I(x,n-t.length)
 }
 
-
-/*xxxxxx
-function Vx(e,x){if(typeof(e)=="string"){x=e;e=entry()}
- return (f("VOID",e)
-  ?x==null
-   ?" ★ BRISANO ★ "
-   :(typeof(x)=="string" ?x :true)
-  :( typeof(x)=="string" ?x :x==0?"":false))
-}
-*/
 //★★★★★★★
