@@ -19,17 +19,18 @@ function S(x,n){x=field(x);
  } return s
 }
 
-function I(x,n){var c=n>0; n=Math.abs(n)
- var s=" ".repeat(n)
- var p= x.length>n?"•":""
+function I(x,n){
+ var c=n>0; n=Math.abs(n) 
+ var s=" ".repeat(n) 
+ var p= x.length>n?"•":"" 
  return (c
   ?(x+s).slice(0,n)+p
   :p+(s+x).slice(-n))
 }
-function F(t,x){ x=field(x)
- return (x==""
-   ?""
-   :"\n"+t+"="+I(x,n-t.length)
+function F(t,x){ x=field(x) 
+ return x==""
+  ?""
+  :"\n"+t+":"+I(x,n-t.length)
 }
 
 
