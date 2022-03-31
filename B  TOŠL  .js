@@ -1,3 +1,9 @@
+/*  
+★+ pr(fld,val) najde prejšnji zapis# (-1 =ne obstaja) kjer (e#.field(fls)==val)
+5 => dbFunct!
+
+*/
+//
 function m(x){return moment(x)}
 function f(x,e){return e==null?field(x):e.field(x) } 
 function P(e){return e==null?entry().prev():e.prev()}
