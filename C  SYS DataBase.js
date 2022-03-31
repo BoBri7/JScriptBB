@@ -1,4 +1,10 @@
-/// ★★★★ DataBase functions  ★★★
+/* // ★★★★ DataBase functions  ★★★
+ lines (38 sloc)  880 Bytes
+ 
+★+ pr(fld,val) najde prejšnji zapis# (-1 =ne obstaja) kjer (e#.field(fls)==val)
+5 => dbFunct!
+*/
+//
 function dbf() {
   s ="\n ★★★ DB & SYS FUNCTIONS ★★ \n"
   s+=" db( n)      ret lib  \n"
