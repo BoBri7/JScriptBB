@@ -1,6 +1,5 @@
 
-function H(){
- return ("db Stru funkcije"
+function H(){ return ("db Stru funkcije:"
  +"\n=f(fld.n,t;descr): polni izpis {kliče fld(a,b)}"
  +"\n=f()             : vrne izpis za f.(id)=0!"
 )}
@@ -24,9 +23,12 @@ function fld(x,y){
    return (p>0?x+s:s+x).slice(-p-1)
   } // <<< int F <<<<<<<<<<<<<<<<<<<<<<
 
+ 
+ if(x==null)return field("id")!=0 && field("dbSrL").length<5
+    ?"★"          // return ★ za entry>0 in brez širin
+    :a.join("\n")  //★★★★  RETURN ★★★★
+ //★★★★★★★★ POLNJENJE ARRAYA ★★★★★ 
  var s=""
- if(x==null)return field("id")>0?"★":a.join("\n")  //★★★★  RETURN ★★★★
- //★★★★★★★★ POLNJENJE ARRAYA ★★★★★ ★★10
  if(x.slice(0,1)<"A") s+=""+x  //★ <labela ★ field>
  else{                s+=I(x,0)
   s+=I(vl(1)>0 ?": "+c(field(x)) :"",1)
@@ -55,9 +57,9 @@ function fld(x,y){
  catch(er){a=[s]}
  finally return "★"
 }
-//★★★ Lokal f(fld,aDesc) ★★★
+//★★★  f(fld,aDesc) ★★★
 function f(x,y){return x==null//&&field("id")==0
-  ?fld():
-  fld(x,y)
+  ?fld()
+  :fld(x,y)
 }
 //★★★ EndFunct ★★★★★★★★★★★★★★★★★★★★★★★★★
