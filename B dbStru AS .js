@@ -1,11 +1,51 @@
 // Thu, 31 Mar 2022 ★★
 function H(){ return ("★ dbStru actionScript funkcije★"
- +"\n dbStruW(txt,o){ ★ o/Write file"
- +"\n dbStruR(x)    { ★ Read file"
- +"\n dbStruC()     { ★ Clear file"
- +"\n gfo()         {    get FileObject"
+ +"\n.dbStru(fld,act,len)"
+ +"\n.             /ArayLen [fld.n,typ,oo]/"
+ +"\n.           act Write Over Read Clear Log CANCEL "
+ +"\n.       fld.name (flds)"
+ +"\n=vls($f.n,t,oo  { write to 1.entry field(dbStL) "
+ +"\n-msg($)         { message()"               
+ +"\n= dbStruW(txt,o){ ★ o/Write file"
+ +"\n= dbStruR(x)    { ★ Read file"
+ +"\n= dbStruC()     { ★ Clear file"
+ +"\n- gfo()         {    get FileObject"
  )
 } 
+//★★★★ dbStru ★★★★★★★★★
+function msg(x){message(x)}
+function vls(vl){var db=lib().entries()
+ db[db.length-1].set("dbStL",vl)
+} 
+function dbStru(fld,act,len){
+ if(act.slice(0,2)=="CA"){act+= "  =>  C a n c e l e d ★"
+  msg(act);return act
+ }
+ var rx=act+"★"
+ act=act.slice(0,1)
+ rx+=act+"<" 
+ if(len!=null){rv+=" [vl] ";vsl(len)}
+//★★★★               //★★> 10
+ db=lib().entries()
+ s =lib().title+" "
+ msg("Lib "+s+act)
+ s+=" (št.z.="+db.length+" \n"
+ s+=" <<db[0].field("+fld+") <<"
+ s+=db[db.length-1].field(fld)
+ s+="\n. ~ ~ END stru ~ ~ "
+ rx+=" befSw:"
+ switch(act){          //★★> 19
+ case "W":rx+=dbStruW(s)  ;break // write file
+ case "O":rx+=dbStruW(s,0);break // write file
+ case "R":rx+=dbStruR()   ;break // read  file
+ case "C":rx+=dbStruC()   ;break // CLEAR File
+ case "L":rx=s            ;break // return 4 LOG ★★>24
+ //case "LO":rv+=" ★LogLog ★\n"+s ;break
+ //case "CA":msg("???")  ;break // cancel=doNothing 
+ }
+ return rx
+} 
+//★★★ END FUNCTION dbStru ★★★★★★★★★★★★★★
 function gfo(n,c){//★★★ get file object
  var pt="/storage/emulated/0/Documents/mDBexport"
  switch(isNaN(n)?0:n){
