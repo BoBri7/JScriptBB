@@ -1,11 +1,9 @@
 
 function H(){
  return ("db Stru funkcije"
- +"\n f(fld.n,t;descr): polni izpis {kliče fld(a,b)}"
- +"\n f()             : vrne izpis za f.(id)=0!"
-// +"\n vl(Aray širine izpisa [fld.n,f.v,t,oo])"
- )
-}//★ ?vl(A) = int.f < vrne Širino za kolono
+ +"\n=f(fld.n,t;descr): polni izpis {kliče fld(a,b)}"
+ +"\n=f()             : vrne izpis za f.(id)=0!"
+)}
 //★★★★★★★★★★★★★★★★★★★★★★ MAIN F
 function fld(x,y){
 //           x="field.name"
