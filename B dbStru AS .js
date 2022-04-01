@@ -6,10 +6,10 @@ function H(){ return ("★ dbStru actionScript funkcije★"
  +"\n.       fld.name (flds)"
  +"\n=vls($f.n,t,oo  { write to 1.entry field(dbStL) "
  +"\n-msg($)         { message()"               
- +"\n= dbStruW(txt,o){ ★ o/Write file"
- +"\n= dbStruR(x)    { ★ Read file"
- +"\n= dbStruC()     { ★ Clear file"
- +"\n- gfo()         {    get FileObject"
+ +"\n=dbStruW(txt,o){ ★ o/Write file"
+ +"\n=dbStruR(x)    { ★ Read file"
+ +"\n=dbStruC()     { ★ Clear file"
+ +"\n-gfo()         {    get FileObject"
 )} 
 //★★★★ dbStru ★★★★★★★★★
 function msg(x){message(x)}
