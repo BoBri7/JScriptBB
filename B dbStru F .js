@@ -3,9 +3,9 @@ function H(){
  return ("db Stru funkcije"
  +"\n f(fld.n,t;descr): polni izpis {kliče fld(a,b)}"
  +"\n f()             : vrne izpis za f.(id)=0!"
- +"\n vl(Aray širine izpisa [fld.n,f.v,t,oo])"
+// +"\n vl(Aray širine izpisa [fld.n,f.v,t,oo])"
  )
-}
+}//★ ?vl(A) = int.f < vrne Širino za kolono
 //★★★★★★★★★★★★★★★★★★★★★★ MAIN F
 function fld(x,y){
 //           x="field.name"
@@ -14,7 +14,7 @@ function fld(x,y){
  function vl(i){//★★ širine izpisa [fld.n,f.v,t,all]
   return field("dbStL").split(",")[i]
  }
- function c(x){//★★ počisti 
+ function c(x){//★★ počisti LBr...
   x=String(" "+x)//.valueOf()
   x=x.split("\n").join("~")
   try{      return x.replaceAll("\n"," ÷")+"<"}
