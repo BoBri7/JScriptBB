@@ -1,6 +1,6 @@
 // Thu, 31 Mar 2022 ★★
 function H(){ return ("★ dbStru actionScript funkcije★"
- +"\n.dbStru(fld,act,len)"
+ +"\n=dbStru(fld,act,len)"
  +"\n.             /ArayLen [fld.n,typ,oo]/"
  +"\n.           act Write Over Read Clear Log CANCEL "
  +"\n.       fld.name (flds)"
@@ -10,8 +10,7 @@ function H(){ return ("★ dbStru actionScript funkcije★"
  +"\n= dbStruR(x)    { ★ Read file"
  +"\n= dbStruC()     { ★ Clear file"
  +"\n- gfo()         {    get FileObject"
- )
-} 
+)} 
 //★★★★ dbStru ★★★★★★★★★
 function msg(x){message(x)}
 function vls(vl){var db=lib().entries()
