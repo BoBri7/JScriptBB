@@ -24,8 +24,8 @@ function fld(x,y){
   } // <<< int F <<<<<<<<<<<<<<<<<<<<<<
  // ★★★★★★ on no param. EXIT: 
  if(x==null)return (field("id")==0 && field("dbSrL").length>4
-    ?"T★ "+a.join("\n")  //★★★★  RETURN ★★★★
-    :"★★"          // return ★ za entry>0 in brez širin             
+    ?""+a.join("\n") //★★★★  RETURN ★★★★
+    :"-"             // return ★ za entry>0 in brez širin             
  )                  
  //★★★★★★★★ POLNJENJE ARRAYA ★★★★★ 
  var s=""
