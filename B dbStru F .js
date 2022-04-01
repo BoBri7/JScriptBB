@@ -22,9 +22,10 @@ function fld(x,y){
    var s=" ".repeat(Math.max(1,Math.abs(p)-x.length))
    return (p>0?x+s:s+x).slice(-p-1)
   } // <<< int F <<<<<<<<<<<<<<<<<<<<<<
- if(x==null)return (field("id")!=0 && field("dbSrL")<"0"
-    ?"★"          // return ★ za entry>0 in brez širin
-    :a.join("\n")  //★★★★  RETURN ★★★★
+ // ★★★★★★ on no param. EXIT: 
+ if(x==null)return (field("id")==0 && field("dbSrL").length>4
+    ?"T★ "+a.join("\n")  //★★★★  RETURN ★★★★
+    :"★★"          // return ★ za entry>0 in brez širin             
  )                  
  //★★★★★★★★ POLNJENJE ARRAYA ★★★★★ 
  var s=""
