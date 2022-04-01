@@ -23,12 +23,12 @@ function fld(x,y){
    return (p>0?x+s:s+x).slice(-p-1)
   } // <<< int F <<<<<<<<<<<<<<<<<<<<<<
  // ★★★★★★ on no param. EXIT: 
- if(x==null)
+ if(x==null){s="-"
   if(field("id")==0 && field("dbSrL").length>4){
-    s=""+a.join("\n") ; a=null
-    return s             //★★★★  RETURN ★★★★
-    }else return "-"     //★★★★  return za entry>0 in brez širin             
- )                  
+   s=""+a.join("\n") ; //a=["π "]
+  }
+  return s        //★★  RETURN ★★★★
+ }
  //★★★★★★★★ POLNJENJE ARRAYA ★★★★★ 
  var s=""
  if(x.slice(0,1)<"A") s+=""+x  //★ <labela ★ field>
