@@ -15,8 +15,9 @@ function H(){ return ("★ dbStru actionScript funkcije★"
 function msg(x){message(x)}
 function vls(vl){var db=lib().entries()
  db[db.length-1].set("dbStL",vl)
+ return "["+vl+"]"
 } 
-function dbStru(fld,act,len){
+function dbStru(fld,act,len){//★★ MAIN F ★5
  if(act.slice(0,2)=="CA"){act+= "  =>  C a n c e l e d ★"
   msg(act);return act
  }
