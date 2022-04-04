@@ -14,7 +14,9 @@ function H(){ return ("★ dbStru actionScript funkcije★"
 //★★★★ dbStru ★★★★★★★★★
 function msg(x){message(x)}
 function vls(vl){var db=lib().entries()
- db[db.length-1].set("dbStL",vl)
+ var e=db[db.length-1]
+ e.set("dbStL",vl)
+ e.recalc()              
  return "["+vl+"]"
 } 
 function dbStru(fld,act,len){//★★ MAIN F ★5
