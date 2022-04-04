@@ -13,12 +13,15 @@ function H(){ return ("★ dbStru actionScript funkcije★"
 )} 
 //★★★★ dbStru ★★★★★★★★★
 function msg(x){message(x)}
+// 
 function vls(vl){var db=lib().entries()
  var e=db[db.length-1]
  e.set("dbStL",vl)
+ e.set("id",0)      //?0/1     
  e.recalc()              
  return "["+vl+"]"
 } 
+//★★ main f ★★
 function dbStru(fld,act,len){//★★ MAIN F ★5
  if(act.slice(0,2)=="CA"){act+= "  =>  C a n c e l e d ★"
   msg(act);return act
@@ -49,17 +52,19 @@ function dbStru(fld,act,len){//★★ MAIN F ★5
  return rx
 } 
 //★★★ END FUNCTION dbStru ★★★★★★★★★★★★★★
+// get file object
 function gfo(n,c){//★★★ get file object
  var pt="/storage/emulated/0/Documents/mDBexport"
  switch(isNaN(n)?0:n){
  case(9):pt="/sdcard/Documents/MmDbLg" ;break
- case(1):pt="/storage/emulated/0/MyDATA";break
+ case(1):pt="/storage/emulated/0/MyDATA";break //★1
  }
  var fn=pt+"/dbStru_"+lib().title+".txt"
  return c==null
   ?file(fn)
   :"f.name= "+fn+"\n"
-} //★★>12
+} 
+// dbStruR read 
 function dbStruR(x){ //★★ read file
  var fo=gfo(1)
  try{x=fo.readAll()}
@@ -69,7 +74,7 @@ function dbStruR(x){ //★★ read file
  }
  return x==""?-1:x
 }  
-//★★★★ MAIN FUNCTION ★ CLEAR FILE ★★★★ >22
+//★★★★ FUNCTION ★ CLEAR FILE ★★★★ >22
 function dbStruC(){ //★★ clear file
  var fo=gfo(1),x=0
  try{fo.write("");x=1}
@@ -79,8 +84,11 @@ function dbStruC(){ //★★ clear file
   return x
  }
 }
-//★★★★ MAIN FUNCTION ★ WRITE FILE ★★★   ★★>31
+//★★★★ FUNCTION ★ WRITE FILE ★★★   ★★>31
 function dbStruW(txt,o){ // Write /add 2 file
+ if(txt==""){var db=lib().entries()
+  txt=db[db.length-1].field("flds")
+ } 
  var fo=gfo(1), pt="",rv=0
  var ts="-".repeat(33)+moment().format(" D.M.Y HH:mm:ss")
  try        {pt=fo.readAll();rv=1 }
@@ -88,6 +96,7 @@ function dbStruW(txt,o){ // Write /add 2 file
  finally {
   fo.write( txt+ "\n"+ts+(o!=null?"":"\n"+pt))
   fo.close() 
+  db=null
   return "ws="+rv
  } 
 }
