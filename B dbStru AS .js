@@ -29,12 +29,13 @@ function dbStru(fld,act,len){//★★ MAIN F ★5
  if(len!=null){rv+=" [vl] ";vsl(len)}
 //★★★★               //★★> 10
  db=lib().entries()
- s =lib().title+" "
- msg("Lib "+s+act)
- s+=" (št.z.="+db.length+" \n"
- s+=" <<db[0].field("+fld+") <<"
- s+=db[db.length-1].field(fld)
- s+="\n. ~ ~ END stru ~ ~ "
+ var z=db.length
+ var s ="Lib: "+lib().title+" "
+ msg(s+" /a:"+act+"")
+ s+=" /št.z.="+z+"\n"
+ s+=" <<db["+z+"].field("+fld+") :\n"
+ s+=db[z-1].field(fld)
+ s+="\n ~ ~ END stru ~ ~ "
  rx+=" befSw:"
  switch(act){          //★★> 19
  case "W":rx+=dbStruW(s)  ;break // write file
