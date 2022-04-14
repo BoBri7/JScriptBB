@@ -28,10 +28,17 @@ function t2l(s,n){
  }
  return o+p+s
 } 
-// status polj
+// status polj +indikacija sprememb
+function fi(x,n){if(n==null)n=4
+ var p=entry().prev()
+ p=p==null?"•":p.field(x)==field(x)?"=":"★"
+ a.push(x.slice(0,n)+" "+field(x)+" "+p)
+} 
+/* prev verzion 
 function fp(x,n){if(n==null)n=4
  a.push(x.slice(0,n)+" "+field(x))
-} //★★★★★★★
+} */
+//★★★★★★★
 
 // izpiše prev. ★prompr za nov vnos
 function fi(x,l,n,d){if(n==null)n=13
