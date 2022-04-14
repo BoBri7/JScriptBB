@@ -29,7 +29,7 @@ function t2l(s,n){
  return o+p+s
 } 
 // status polj +indikacija sprememb
-function fi(x,n){if(n==null)n=4
+function fid(x,n){if(n==null)n=4
  var p=entry().prev()
  p=p==null?"•":p.field(x)==field(x)?"=":"★"
  a.push(x.slice(0,n)+" "+field(x)+" "+p)
