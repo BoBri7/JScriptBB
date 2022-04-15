@@ -1,4 +1,5 @@
-// function iL(a,n,o,d){
+// izpis Liste v linije
+function iL(a,n,o,d){
  if(o==null)o=a+" :"
  a=field(a)
  for(var i=0;i<a.length;i++){
@@ -16,7 +17,10 @@ function t2l(s,n,d){s=s.trim()+""
   x2=s.indexOf(" ",x)
   return 1+(x1<n+d?x1:x2)
  }
- if(d==null)d=4
+ //if(d==null)d=4
+ d=isN(d,4)
+ n=isN(n,44)
+ n=n>99?99:(n<9?9:n)
  if(s.length<n)return s //★★
  var p="\n   "
  var c=nn(n)
@@ -27,6 +31,9 @@ function t2l(s,n,d){s=s.trim()+""
   s=s.slice(c)
  }
  return o+p+s
+} 
+function isN(x,v){
+ return x==null?v:x
 } 
 // status polj +indikacija sprememb
 function fii(x,n){if(n==null)n=4
