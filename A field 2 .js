@@ -1,22 +1,22 @@
-// Lista v textLinije dolžine n, o=prompt z= zamik(3)
-function iL(a,n,o){
+// function iL(a,n,o,d){
  if(o==null)o=a+" :"
  a=field(a)
  for(var i=0;i<a.length;i++){
   var ai=a[i] 
   o+="\n"
   o+=ai.checked?"[×]":"[ ]"
-  o+=t2l(String(ai),n)
+  o+=t2l(String(ai),n,d)
  } 
  return o
 }
-// tex v linije dolžine n po besedah
-function t2l(s,n){
+// text v linije dolžine n po besedah
+function t2l(s,n,d){s=s.trim()+""
  function nn(x){
   x1=s.slice(0,x).lastIndexOf(" ")
   x2=s.indexOf(" ",x)
-  return 1+(x1<n+4?x1:x2)
+  return 1+(x1<n+d?x1:x2)
  }
+ if(d==null)d=4
  if(s.length<n)return s //★★
  var p="\n   "
  var c=nn(n)
