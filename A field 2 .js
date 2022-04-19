@@ -32,6 +32,16 @@ function t2l(s,n,d){s=s.trim()+""
 // default value
 function isN(x,v){return x==null?v:x} 
 //★★★★★
+function f(x){return field(x)} 
+// ChkList 2 lines
+function iCL(x,c,h){var n=0;o="",h=h==null?x:h
+ x=field(x);//c=field(c)
+ for(i=0;i<x.length;i++){xi=x[i]
+  if(xi.slice(0,1)=="!"){n++;o+="\n  ="+xi }
+  else if(!c)o+="\n    "+t2l(xi)
+ }
+ return h+(n>0&&c?" [ krit= "+n+" ]":":")+o
+} 
 
 // status polj +indikacija sprememb
 function fii(x,n){if(n==null)n=4
