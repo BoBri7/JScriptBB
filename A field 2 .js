@@ -2,39 +2,37 @@
 function iL(a,n,o,d){
  if(o==null)o=a+" :"
  a=field(a)
+ if(a.length>0){
  for(var i=0;i<a.length;i++){
   var ai=a[i] 
   o+="\n"
   o+=ai.checked?"[×]":"[ ]"
   o+=t2l(String(ai),n,d)
- } 
+ } }
  return o
 }
-// text v linije dolžine n po besedah
+//text>lin.dolž. n /besedah
 function t2l(s,n,d){s=s.trim()+""
- function nn(x){
-  x1=s.slice(0,x).lastIndexOf(" ")
-  x2=s.indexOf(" ",x)
-  return 1+(x1<n+d?x1:x2)
+ function nn(x){if(x<15)x=15
+  var x1=s.slice(0,x).lastIndexOf(" ")
+  var x2=s.indexOf(" ",x)
+  return 1+(x1<n+d?x1:(x2<11?11:x2))
  }
- //if(d==null)d=4
  d=isN(d,4)
  n=isN(n,44)
- n=n>99?99:(n<9?9:n)
  if(s.length<n)return s //★★
  var p="\n   "
- var c=nn(n)
- var o=s.slice(0,c)
- s=s.slice(c)
- while(s.length>n){c=nn(n-3)
-  o+=p+s.slice(0,c)
-  s=s.slice(c)
+ var c=nn(n-d)
+ var o=s.slice(0,c);s=s.slice(c)
+ while(s.length>n){c=nn(n-d)  
+  o+=p+s.slice(0,c);s=s.slice(c)
  }
  return o+p+s
-} 
-function isN(x,v){
- return x==null?v:x
-} 
+}
+// default value
+function isN(x,v){return x==null?v:x} 
+//★★★★★
+
 // status polj +indikacija sprememb
 function fii(x,n){if(n==null)n=4
  var p=entry().prev()
