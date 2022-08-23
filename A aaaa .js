@@ -81,7 +81,7 @@ function Gg(fn,d,p,n){
   a.push(i*10+9)
   if(i<d-1)a.push(String(i+1))
  }  82
- g+=x(p,a,0)
+ g+=Gr(p,a,0)
  return (isNaN(n)
   ?g
   :g.slice(0,n+fn.length+1)+"|")
