@@ -1,6 +1,6 @@
 // izpis Liste v linije
 function iL(a,n,o,d){
- if(o==null)o=a+" :"
+ if(o==null)o=(a+" :"+" ".repeat(n)).slice(0,n)
  a=field(a)
  if(a.length>0){
  for(var i=0;i<a.length;i++){
