@@ -1,3 +1,5 @@
+/* ss="\n"
+*/
 function f(x,e){return e.field(x)}
 function fd(d){
  return d.format(" ddd DD.MM.")
