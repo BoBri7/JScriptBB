@@ -4,6 +4,7 @@ function iL(a,n,o,d){
     #ch/line
     o=naslov (1.linija)
     d=zamik (>4)
+ */
  if(o==null)o=(a+" :"+" ".repeat(n)).slice(0,n)
  a=field(a)
  if(a.length>0){
