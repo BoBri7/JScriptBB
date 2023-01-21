@@ -18,7 +18,7 @@ function FWn(t,fn,fx) {
  var s=0
  try{ o.write(h+t) ;s++ }
  finally {
-  o.close ;
+  o.close() ;
   return s+"\nFw="+fn+"\n>"
  }
 }
