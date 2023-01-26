@@ -2,7 +2,7 @@ function FWn(t,fn,fx) {
  if(fn==null)fn="FW_"
  if(fx==null)fx="txt"
  if(fx[0]!=".")fx="."+fx
- var ff="/sdcard/MyData/"
+ var ff="/sdcard/Documents/MyData/"
  var lt=lib().title
  var d=moment()
  d=d.format(" DD.MM HH:mm ")
