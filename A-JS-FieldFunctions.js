@@ -1,5 +1,6 @@
 /*
 * funkcije za js.field
+* pr(fn) R: e.pev.f(fn)
 * 
 */
 // vrne field(fn) prejšnjega zapisa
