@@ -1,10 +1,11 @@
-/* funkcije za js.field
+/*
+* funkcije za js.field
 * 
 */
 // vrne field(fn) prejšnjega zapisa
 // če 1.zapis vrne ""
 function pr(fn){ e=entry().prev()
- if(e== null) return ""
+ if(e==null) return ""
  return e.field(fn)
 }
 // field(fn)
