@@ -35,7 +35,7 @@ function round(xv,n){ n=n!=null ?n :1 //def=1
 // padLeftRight
 function prl(s,n,p){ if(p==null)p=" "
  n=n!=null ?n :15*(typeof(v)!="string"?-1:1)
- if(n>0 && n<1) return p.repeat(1/n)+s
+ if(n>0 && n<=1) return p.repeat(1/n)+s
  //s= (n>0 ?s:"")+p.repeat(Math.abs(n))+(n>0 ?"" :s)
  p=""+p.repeat(Math.abs(n))
  return n>0
