@@ -19,7 +19,7 @@ function wt2l(txt, hd, ll, dl){ if(ll==null)ll=25
   }
  return o+l
 }
-//== list 2 lines
+//== wrap list 2 lines
 function wl2l(lfn, hd, ll){
   var o=hd!=null ?hd :lfn+":"
   lfn=field(lfn)
