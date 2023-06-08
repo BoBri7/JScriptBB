@@ -1,10 +1,11 @@
-/*
-* t2l(txt, hed, ll=25, HedDl=":")
-   = prepiše text v vrstice dolžine ll
-* l2l(lfn, hd, ll)
-   = prepiše ListField v vrstice 
+/*  WRAP to LINES
+* wt2l(txt, hed, ll=25, HedDl=":")
+*   = prepiše text v vrstice dolžine ll
+* wl2l(lfn, hd, ll)
+*   = prepiše ListField v vrstice 
 */
-function t2l(txt, hd, ll, dl){ if(ll==null)ll=25
+// wrap text 2 lines
+function wt2l(txt, hd, ll, dl){ if(ll==null)ll=25
   const d=" "
   var o="", l="t:"+d.repeat(hd-2)
   if( typeof(hd)=="string" ){
@@ -18,8 +19,8 @@ function t2l(txt, hd, ll, dl){ if(ll==null)ll=25
   }
  return o+l
 }
-
-function l2l(lfn, hd, ll){
+//== list 2 lines
+function wl2l(lfn, hd, ll){
   var o=hd!=null ?hd :lfn+":"
   lfn=field(lfn)
   // lfn[1].checked = true
@@ -29,3 +30,4 @@ function l2l(lfn, hd, ll){
   }
   return o
 }
+//== END ==
