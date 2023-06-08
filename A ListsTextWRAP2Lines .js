@@ -26,7 +26,7 @@ function wl2l(lfn, hd, ll){
   // lfn[1].checked = true
   for(let ii=0;ii<lfn.length;ii++){ti=lfn[ii]
     o+="\n "
-    o+=t2l(String(ti), ti.checked ?"[•]" : "[  ]",ll!=null ?ll :25,"" )
+    o+=wt2l(String(ti),ti.checked ?"[•]":"[  ]",ll!=null ?ll:25,"")
   }
   return o
 }
