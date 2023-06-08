@@ -1,5 +1,6 @@
+function tteesstt(x){return "x ="+x}
+
 /* ss="\n"
-*/
 function f(x,e){return e.field(x)}
 function fd(d){
  return d.format(" ddd DD.MM.")
@@ -90,3 +91,4 @@ function Gg(fn,d,p,n){
 }
 
 // TEST //
+*/
