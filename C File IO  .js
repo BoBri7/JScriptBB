@@ -28,6 +28,9 @@ function Fx(Fns)     { return Fns.exists() } //??★
 function Fl(Fno)     { return Fno.length() }
 function Fp(Fno)     { return Fno.getLineNumber() }
 
-
+function exist(o){ 
+  try { let t=o.readChar() ;  return true }
+  catch (Er) {return false }
+ }
 //★★★ END FILE IO ★★★
 // f = file("/sdcard/MyData/myfile.txt"); 
